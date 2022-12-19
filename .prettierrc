@@ -1,0 +1,21 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "endOfLine":"auto",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": "*.js(?x)",
+      "options": {
+        "parser": "babel"
+      }
+    },
+    {
+      "files": "*.(?s)css",
+      "options": {
+        "parser": "scss"
+      }
+    }
+  ]
+}

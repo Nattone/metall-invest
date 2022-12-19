@@ -1,0 +1,12 @@
+{
+  "common": {},
+  "pages": {
+    "all": {
+        "pageTitle": "Страницы"
+    },
+    "index": {
+      "pageTitle": "metall-invest - main page",
+      "title": "page title"
+    }
+  }
+}

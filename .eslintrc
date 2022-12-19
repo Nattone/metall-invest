@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2022": true
+    },
+  
+    "extends": [
+      "standard",
+      "prettier"
+    ],
+    "plugins": [
+    ],
+  
+    "settings": {
+    },
+  
+    "rules": {
+      "max-len": [1, { "code": 120, "ignoreComments": true, "ignoreStrings": true, "ignoreUrls": true }],
+      "prefer-const": 1,
+      "camelcase": 1,
+      "no-param-reassign": [
+        "warn",
+        {
+          "props": true
+        }
+      ]
+    }
+  }

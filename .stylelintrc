@@ -1,0 +1,71 @@
+  {
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss",
+        "stylelint-config-recommended-scss",
+        "stylelint-config-prettier"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order"
+    ],
+    "rules": {
+        "no-descending-specificity": null,
+        "selector-class-pattern": null,
+
+        "order/order": [
+        "dollar-variables",
+        "custom-properties",
+        "declarations",
+        "at-rules",
+        "rules"
+        ],
+
+        "order/properties-alphabetical-order": [ true, { "severity": "warning" }],
+        "shorthand-property-no-redundant-values": [ true, { "severity": "warning" }],
+        "color-hex-length": [ "short", { "severity": "warning" }],
+        "function-name-case": [ "lower", { "severity": "warning" }],
+        "function-whitespace-after": [ "always", { "severity": "warning" }],
+        "length-zero-no-unit": [ true, { "severity": "warning" }],
+        "selector-pseudo-element-colon-notation": [ "double", { "severity": "warning" }],
+        "selector-type-case": [ "lower", { "severity": "warning" }],
+        "media-feature-range-operator-space-after": [ "always", { "severity": "warning" }],
+        "media-feature-range-operator-space-before": [ "always", { "severity": "warning" }],
+        "comment-whitespace-inside": [ "always", { "severity": "warning" }],
+        "rule-empty-line-before": [ "always-multi-line", {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"],
+        "severity": "warning"
+        }],
+        "comment-empty-line-before": [ "always", {
+        "except": ["first-nested"],
+        "ignore": ["stylelint-commands"],
+        "severity": "warning"
+        }],
+        "custom-property-empty-line-before": [ "always", {
+        "except": [
+            "after-custom-property",
+            "first-nested"
+        ],
+        "ignore": [
+            "after-comment",
+            "inside-single-line-block"
+        ],
+        "severity": "warning"
+        }],
+        "declaration-empty-line-before": [ "always", {
+        "except": [
+            "after-declaration",
+            "first-nested"
+        ],
+        "ignore": [
+            "after-comment",
+            "inside-single-line-block"
+        ],
+        "severity": "warning"
+        }],
+        "alpha-value-notation": [ "number", { "severity": "warning" }],
+        "color-named": [ "never", { "severity": "warning" } ],
+        "color-function-notation": [ "legacy", { "severity": "warning" } ]
+    }
+}

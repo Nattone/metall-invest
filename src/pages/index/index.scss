@@ -1,5 +1,40 @@
 @use '~/styles/colors';
 
 .main-page {
+  .header_desktop {
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
 
+  .main {
+    &__section {
+      height: 100vh;
+      padding-top: 100px;
+    }
+
+    &__primary {
+      background-color: colors.$primary;
+      background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
+      position: relative;
+
+      &::before {
+        background-image: url('../img/art-primary.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+
+        // content: 'мы создаем время';
+        // transform: rotate(90deg);
+        right: 0;
+        top: 0;
+        width: 117px;
+      }
+    }
+  }
 }

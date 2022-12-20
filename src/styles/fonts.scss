@@ -1,11 +1,22 @@
-// @font-face {
-//   font-family: AvenirNextCyr-Demi;
-//   src: local(avenirnext-demibold),
-//     url("/assets/fonts/AvenirNextCyr-Demi.woff2") format("woff2"),
-//     url("/assets/fonts/AvenirNextCyr-Demi.woff") format("woff"),
-//     url("/assets/fonts/AvenirNextCyr-Demi.ttf") format("truetype");
-//   font-style: normal;
-//   font-stretch: normal;
-// }
+@font-face {
+  font-family: Mont;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('/fonts/Mont-Regular.woff2') format('woff2'), url('/fonts/Mont-Regular.woff') format('woff');
+}
 
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap';
+@font-face {
+  font-family: Mont;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Mont-Bold.woff2') format('woff2'), url('/fonts/Mont-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: Mont;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Mont-SemiBold.woff2') format('woff2'), url('/fonts/Mont-SemiBold.woff') format('woff');
+}

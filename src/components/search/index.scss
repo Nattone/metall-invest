@@ -1,0 +1,35 @@
+@use '~/styles/colors';
+
+.search {
+  &__form {
+    position: relative;
+  }
+
+  &__input {
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 5px;
+    color: colors.$white;
+    font-size: 16px;
+    font-weight: 600;
+    height: 42px;
+    outline: none;
+    padding: 0 14px 0 18px;
+
+    &::placeholder {
+      color: colors.$white;
+    }
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 42px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42px;
+  }
+}

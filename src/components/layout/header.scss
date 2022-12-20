@@ -1,5 +1,68 @@
 @use '~/styles/colors';
 
 .header {
+  background-color: grey;
 
+  &_desktop {
+    display: flex;
+    width: 100%;
+  }
+
+  &__menu {
+    &__btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      height: 60px;
+      position: relative;
+      width: 60px;
+
+      &:hover {
+        .header__menu__line::after {
+          left: 50%;
+        }
+      }
+    }
+
+    &__line {
+      background-color: #fff;
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: 20px;
+      transition: all 0.5s ease;
+      width: 100%;
+
+      &::after {
+        background-color: #fff;
+        content: '';
+        height: 3px;
+        left: 0;
+        position: absolute;
+        top: 11px;
+        transition: all 0.3s ease;
+        width: 50%;
+      }
+    }
+  }
+
+  &__control {
+    .btn_round {
+      backdrop-filter: blur(50px);
+      background-color: rgb(76 110 189 / 0.4);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgb(76 110 189 / 0.6);
+      }
+    }
+  }
+
+  &__phone {
+    color: colors.$white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+  }
 }

@@ -3,38 +3,77 @@
 .main-page {
   .header_desktop {
     height: 100px;
-    left: 0;
+    left: 50%;
+    max-width: 1780px;
     position: absolute;
     top: 0;
+    transform: translate(-50%);
     z-index: 1;
   }
 
-  .main {
-    &__section {
-      height: 100vh;
-      padding-top: 100px;
+  .section {
+    height: 100vh;
+    padding-top: 100px;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .primary {
+    background-color: colors.$primary;
+    background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
+    position: relative;
+
+    &::before {
+      background-image: url('../img/art-primary.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 117px;
+    }
+  }
+
+  .production {
+    position: relative;
+
+    &::before {
+      background-image: url('../img/art-production.png');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: '';
+      display: block;
+
+      /* height: 278px; */
+      height: 200px;
+      left: 0;
+      position: absolute;
+      width: 100%;
     }
 
-    &__primary {
-      background-color: colors.$primary;
-      background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
-      position: relative;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+  }
 
-      &::before {
-        background-image: url('../img/art-primary.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
+  .advantages {
+    background-color: #30487e;
+    background-image: linear-gradient(180deg, rgba(0, 10, 82, 0.15) 17.84%, rgba(10, 21, 48, 0.72) 89.77%);
 
-        // content: 'мы создаем время';
-        // transform: rotate(90deg);
-        right: 0;
-        top: 0;
-        width: 117px;
-      }
+    &__title {
+      color: colors.$white;
+      text-align: center;
     }
   }
 }

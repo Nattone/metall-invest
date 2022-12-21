@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 
 {{#> common/body
-    title=pages.index.pageTitle
+    title=pages.main-page.pageTitle
     class="main-page"
 }}
 
-{{> layout/header title='pages.index.title'}}
+{{> layout/header title='pages.main-page.title'}}
 
 <main class="main">
-    <section class="main__primary main__section">
+    <section class="primary section">
         <div class="container">
-            <div class="main__content">
-                <h1 class="title">Металлопрокат в Красноярске </h1>
-                <ul class="main__list content__list">
-                    <li class="main__item content__item">продажа, производство металлоизделий</li>
-                    <li class="main__item content__item">услуги металлообработки</li>
+            <div class="primary__content">
+                <h1 class="primary__title">{{pages.main-page.primary.title}}</h1>
+                <ul class="primary__list content__list">
+
+                    {{#each pages.main-page.primary.list}}
+                        <li class="primary__item content__item">{{this.item}}</li>
+                    {{/each}}
                 </ul>
             </div>
-            <div class="main__slider"></div>
-            <div class="main__widget"></div>
-            <button class="main__scroll"></button>
+            <div class="primary__slider"></div>
+            <div class="primary__widget"></div>
+            <button class="primary__scroll"></button>
 
         </div>
+    </section>
+    <section class="production section">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="production__title section__title">{{pages.main-page.production.title}}<span class="section__title_accent">{{pages.main-page.production.title_accent}}</span></h2>
+                <button class="section__btn btn btn_normal btn_light">{{pages.main-page.production.btn}}</button>
+            </div>
+            <ul class="production__list">
+                {{#each pages.main-page.production.item}}
+                    {{> production/item item=this }}
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+    <section class="advantages section">
+        <div class="container">
+            <h2 class="advantages__title section__title">{{pages.main-page.advantages.title}}</h2>
+            <ul class="advantages__list">
+                {{#each pages.main-page.advantages.item}}
+                    {{> advantages/item item=this }}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="advantages__ticker"></div>
     </section>
 </main>
 

@@ -123,7 +123,7 @@ module.exports = (env = {}, argv = {}) => {
         patterns: [
           { from: `${PATHS.src}/img`, to: 'img' },
           // { from: `${PATHS.src}/mocks`, to: 'mocks' },
-          // { from: `${PATHS.src}/fonts`, to: 'assets/fonts' },
+          { from: `${PATHS.src}/fonts`, to: 'fonts' },
           // { from: `${PATHS.src}/static`, to: '' },
         ],
       }),

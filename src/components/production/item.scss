@@ -1,0 +1,35 @@
+.production {
+  .item {
+    margin-bottom: 34px;
+    padding: 0 15px;
+    width: 33.3%;
+
+    &__frame {
+      align-items: center;
+      border: 1px solid #c9c7cf;
+      border-radius: 5px;
+      display: flex;
+      height: 100%;
+      padding: 64px 44px;
+      position: relative;
+    }
+
+    &__numb {
+      font-size: 74px;
+      font-weight: 800;
+      line-height: 52px;
+      margin-right: 28px;
+
+      // color: colors.$grey-bg;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 31px;
+      text-transform: uppercase;
+
+      // color: colors.$text-secondary;
+    }
+  }
+}

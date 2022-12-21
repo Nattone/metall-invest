@@ -139,16 +139,58 @@ p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  height: 42px;
   text-align: center;
+  transition: all 0.3s ease;
 
   &_round {
+    backdrop-filter: blur(50px); // ???
     border-radius: 100%;
     height: 40px;
     width: 40px;
   }
 
+  &_normal {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    mix-blend-mode: multiply;
+    padding: 0 24px;
+  }
+
+  &_light {
+    background-color: #edecf2;
+    color: #30487e;
+
+    &:hover {
+      background-color: #30487e;
+      color: colors.$white;
+    }
+  }
+
+  &_dark {
+    background-color: #4c6dbb;
+    color: colors.$white;
+
+    &:hover {
+      background-color: #4766ae;
+    }
+  }
+
   &__icon {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.section {
+  &__title {
+    color: colors.$text-main;
+    font-weight: 700;
+    margin-bottom: 60px;
+
+    &_accent {
+      color: colors.$secondary;
+    }
   }
 }

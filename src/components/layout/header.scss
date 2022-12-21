@@ -53,13 +53,15 @@
 
   .search {
     // min-width: 700px;
+    flex-grow: 1;
+    margin: 0 50px;
   }
 
   &__control {
     display: flex;
 
     .btn_round {
-      backdrop-filter: blur(50px);
+      // backdrop-filter: blur(50px);
       background-color: rgb(76 110 189 / 0.4);
       transition: background-color 0.3s ease;
 
@@ -82,13 +84,13 @@
   }
 
   &__call {
-    background-color: colors.$btn;
-    color: colors.$white;
-    cursor: pointer;
+    // background-color: colors.$btn;
+    // color: colors.$white;
     height: 58px;
     margin-left: 12px;
     padding: 0 30px;
-    transition: background-color 0.3s ease;
+
+    // transition: background-color 0.3s ease;
 
     &:hover {
       background-color: colors.$btn-hover;

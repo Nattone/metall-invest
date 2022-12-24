@@ -1,3 +1,5 @@
+@use '~/styles/colors';
+
 .production {
   .item {
     margin-bottom: 34px;
@@ -12,24 +14,48 @@
       height: 100%;
       padding: 64px 44px;
       position: relative;
+
+      &:hover {
+        .item__title {
+          color: #4878d3;
+
+          &::before {
+            background-color: #4878d3;
+          }
+        }
+      }
     }
 
     &__numb {
+      color: colors.$grey-bg;
       font-size: 74px;
       font-weight: 800;
       line-height: 52px;
       margin-right: 28px;
-
-      // color: colors.$grey-bg;
     }
 
     &__title {
+      color: colors.$text-secondary;
+      display: inline;
       font-size: 24px;
       font-weight: 700;
       line-height: 31px;
+      padding-right: 26px;
+      position: relative;
       text-transform: uppercase;
+      transition: color 0.3s ease;
 
-      // color: colors.$text-secondary;
+      &::before {
+        background-color: transparent;
+        content: '';
+        height: 10px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.3s ease;
+        width: 10px;
+      }
     }
   }
 }

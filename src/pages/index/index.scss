@@ -12,7 +12,7 @@
   }
 
   .section {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
 
     &__head {
@@ -70,10 +70,40 @@
   .advantages {
     background-color: #30487e;
     background-image: linear-gradient(180deg, rgba(0, 10, 82, 0.15) 17.84%, rgba(10, 21, 48, 0.72) 89.77%);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    @keyframes ticker {
+      from {
+        background-position-x: 0;
+      }
+
+      to {
+        background-position-x: 200%;
+      }
+    }
 
     &__title {
       color: colors.$white;
       text-align: center;
+    }
+
+    &__list {
+      margin-bottom: 38px;
+    }
+
+    &__ticker {
+      animation: ticker 5s linear infinite;
+      background-image: url('../img/art-advantages_ticker_.png');
+      background-position-y: bottom;
+      background-repeat: repeat-x;
+      background-size: 200%;
+      bottom: 0;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
     }
   }
 

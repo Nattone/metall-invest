@@ -50,12 +50,30 @@
 
         <div class="advantages__ticker"></div>
     </section>
-    <section class="team">
+    <section class="team section">
         <div class="container">
             <div class="section__head">
                 <h2 class="team__title section__title">{{pages.main-page.team.title}}<span class="section__title_accent">{{pages.main-page.team.title_accent}}</h2>
                 <blockquote class="team__blockquote">{{pages.main-page.team.blockquote}}</blockquote>
-                <button class="section__btn btn btn_normal btn_light">{{pages.main-page.production.btn}}</button>
+                <button class="section__btn btn btn_normal btn_light">{{pages.main-page.team.btn}}</button>
+            </div>
+            <ul class="team__list">
+                {{!-- {{#each pages.main-page.team.item}}
+                    <li class="team__item content__item">{{this.item}}</li>
+                {{/each}} --}}
+
+                {{#each pages.main-page.team.item}}
+                    {{> team/item item=this }}
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+    <section class="partners section">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="partners__title section__title">{{pages.main-page.partners.title}}<span class="section__title_accent">{{pages.main-page.partners.title_accent}}</h2>
+                <blockquote class="partners__blockquote">{{pages.main-page.partners.blockquote}}</blockquote>
+                <button class="section__btn btn btn_normal btn_light">{{pages.main-page.partners.btn}}</button>
             </div>
         </div>
     </section>

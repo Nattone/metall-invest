@@ -1,0 +1,61 @@
+@use '~/styles/colors';
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  position: relative;
+
+  &:hover {
+    .team__item__image__second {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    border-radius: 5px;
+    margin-bottom: 54px;
+    position: relative;
+
+    // &__first {
+    //     background: linear-gradient(0deg, rgba(16, 15, 26, 0.2), rgba(16, 15, 26, 0.2));
+    // }
+
+    &__second {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &__first,
+    &__second {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: #4a4a5f;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+  }
+
+  &__description {
+    display: none;
+  }
+
+  & + .team__item_active {
+    .team__image {
+      transform: scale(0.8);
+      transform-origin: left top;
+    }
+
+    .team__description {
+      display: block;
+    }
+  }
+}

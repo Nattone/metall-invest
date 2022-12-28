@@ -1,9 +1,10 @@
 @use '~/styles/colors';
 
 .footer {
-  background: url('../img/bg-footer_1.svg') 0 0 no-repeat, url('../img/bg-footer_2.svg') 40% 100% no-repeat;
+  background: url('../img/bg-footer_1.svg') 0 0 no-repeat, url('../img/bg-footer_2.svg') 43% 100% no-repeat;
   background-color: #1d1d29;
   min-height: 100vh;
+  overflow-x: hidden;
 
   .container {
     display: flex;
@@ -24,6 +25,8 @@
 
   &__right {
     background-color: #14141f;
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 40%;
 
@@ -35,6 +38,16 @@
       position: absolute;
       top: 0;
       width: 100vw;
+    }
+
+    &__container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      max-width: 75%;
+      text-align: center;
     }
   }
 
@@ -85,12 +98,15 @@
       font-size: 18px;
       font-weight: 600;
       line-height: 1.33;
-      margin-bottom: 24px;
       transition: color 0.3s ease;
 
       &:hover {
         color: #4878d3;
         text-decoration: underline;
+      }
+
+      & + .footer__menu__item {
+        margin-top: 24px;
       }
     }
   }
@@ -123,6 +139,84 @@
       &:hover {
         color: #fff;
       }
+    }
+  }
+
+  &__widget {
+    display: block;
+    margin-bottom: 58px;
+    width: fit-content;
+  }
+
+  &__text {
+    color: colors.$white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    margin: 0 auto 60px;
+    max-width: 500px;
+  }
+
+  &__btn {
+    height: 60px;
+    margin-bottom: 44px;
+    width: 100%;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+    width: 100%;
+
+    &__link {
+      color: colors.$white;
+      font-size: 20px;
+
+      // font-family: 'Commissioner';
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: 24px;
+      position: relative;
+
+      &:hover {
+        color: #4878d3;
+      }
+
+      &::before {
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &_phone {
+        padding-left: 36px;
+
+        &::before {
+          background-image: url('../img/icon-phone_filled.svg');
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      &_email {
+        padding-left: 30px;
+
+        &::before {
+          background-image: url('../img/icon-mail.svg');
+          height: 13px;
+          width: 17px;
+        }
+      }
+    }
+  }
+
+  &__made-by {
+    &__logo {
+      display: block;
     }
   }
 }

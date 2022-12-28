@@ -1,5 +1,132 @@
 @use '~/styles/colors';
 
 .footer {
-  
+  background: url('../img/bg-footer_1.svg') 0 0 no-repeat, url('../img/bg-footer_2.svg') 40% 100% no-repeat;
+  background-color: #1d1d29;
+  min-height: 100vh;
+
+  .container {
+    display: flex;
+  }
+
+  &__left,
+  &__right {
+    min-height: 100vh;
+    padding: 60px 0 50px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    width: 60%;
+  }
+
+  &__right {
+    background-color: #14141f;
+    position: relative;
+    width: 40%;
+
+    &::after {
+      background-color: #14141f;
+      bottom: 0;
+      content: '';
+      left: 100%;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+  }
+
+  &__logo {
+    border-bottom: 0.2px solid colors.$white;
+    padding-bottom: 36px;
+  }
+
+  .flex-separator {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    // flex-grow: 1;
+    display: flex;
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      width: 33.3%;
+
+      & + .footer__menu__col {
+        padding-left: 40px;
+      }
+    }
+
+    &__title {
+      color: colors.$white;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 38px;
+
+      &_link {
+        &:hover {
+          color: #4878d3;
+          text-decoration: underline;
+        }
+      }
+
+      & + .footer__menu__list {
+        margin-top: 44px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      color: colors.$white;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      margin-bottom: 24px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4878d3;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__menu,
+  &__decor {
+    margin: 36px 0;
+  }
+
+  &__bottom {
+    border-top: 0.2px solid colors.$white;
+    color: #75757b;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+
+    &__copyright,
+    &__confidentiality,
+    &__term {
+      color: #75757b;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    &__confidentiality,
+    &__term {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }

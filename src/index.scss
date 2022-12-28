@@ -118,6 +118,14 @@ p {
   //   }
 }
 
+.logo {
+  display: block;
+
+  &__image {
+    display: block;
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 1780px;
@@ -135,6 +143,23 @@ p {
   // }
 }
 
+.content {
+  &__item {
+    margin-bottom: 14px;
+    padding-left: 24px;
+    position: relative;
+
+    &::before {
+      background-color: #4878d3;
+      content: '';
+      height: 10px;
+      left: 0;
+      position: absolute;
+      width: 10px;
+    }
+  }
+}
+
 .btn {
   border: none;
   border-radius: 5px;
@@ -142,6 +167,7 @@ p {
   height: 42px;
   text-align: center;
   transition: all 0.3s ease;
+  white-space: nowrap;
 
   &_round {
     backdrop-filter: blur(50px); // ???
@@ -184,10 +210,13 @@ p {
 }
 
 .section {
+  position: relative;
+
   &__title {
     color: colors.$text-main;
     font-weight: 700;
     margin-bottom: 60px;
+    white-space: nowrap;
 
     &_accent {
       color: colors.$secondary;

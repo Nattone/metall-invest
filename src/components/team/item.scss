@@ -10,11 +10,16 @@
     .team__item__image__second {
       opacity: 1;
     }
+
+    .team__item__btn {
+      opacity: 1;
+    }
   }
 
   &__image {
     border-radius: 5px;
     margin-bottom: 54px;
+    overflow: hidden;
     position: relative;
 
     // &__first {
@@ -34,6 +39,35 @@
       display: block;
       height: auto;
       width: 100%;
+    }
+  }
+
+  &__btn {
+    background-color: rgb(74 74 95 / 0.2);
+    border-radius: 100%;
+    height: 58px;
+    opacity: 0;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+
+    &:hover {
+      background-color: #30487e;
+    }
+
+    &::before {
+      background-image: url('../img/icon-arrow_big_white.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 16px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
     }
   }
 

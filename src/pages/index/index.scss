@@ -35,6 +35,7 @@
   .primary {
     background-color: colors.$primary;
     background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
+    overflow-x: hidden;
 
     &::before {
       background-image: url('../img/art-primary.png');

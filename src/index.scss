@@ -215,6 +215,7 @@ p {
   &__title {
     color: colors.$text-main;
     font-weight: 700;
+    letter-spacing: 0.03em;
     margin-bottom: 60px;
     white-space: nowrap;
 
@@ -222,4 +223,8 @@ p {
       color: colors.$secondary;
     }
   }
+}
+
+.flex-separator {
+  flex-grow: 1;
 }

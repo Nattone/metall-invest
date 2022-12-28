@@ -56,7 +56,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="team__title section__title">{{pages.main-page.team.title}}<span class="section__title_accent">{{pages.main-page.team.title_accent}}</h2>
-                <blockquote class="team__blockquote">{{pages.main-page.team.blockquote}}</blockquote>
+                <blockquote class="team__blockquote section__blockquote">{{pages.main-page.team.blockquote}}</blockquote>
+                <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.team.btn}}</button>
             </div>
             <ul class="team__list">
@@ -71,7 +72,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="partners__title section__title">{{pages.main-page.partners.title}}<span class="section__title_accent">{{pages.main-page.partners.title_accent}}</h2>
-                <blockquote class="partners__blockquote">{{pages.main-page.partners.blockquote}}</blockquote>
+                <blockquote class="partners__blockquote section__blockquote">{{pages.main-page.partners.blockquote}}</blockquote>
+                <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.partners.btn}}</button>
             </div>
         </div>
@@ -79,12 +81,18 @@
 
 
     <section class="map section">
-        <ul class="map__list">
-            <li class="map__item map__item_krsk"></li>
-            <li class="map__item map__item_irk"></li>
-        </ul>
-        <div class="map__routes">
-            <img src="img/routes_krsk-irk.png" alt="favorites" class="btn__icon">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="map__title section__title">{{pages.main-page.map.title}}<span class="section__title_accent">{{pages.main-page.map.title_accent}}</span></h2>
+                <blockquote class="map__blockquote section__blockquote">{{pages.main-page.map.blockquote}}</blockquote>
+            </div>
+            <ul class="map__list">
+                <li class="map__item map__item_krsk"></li>
+                <li class="map__item map__item_irk"></li>
+            </ul>
+            <div class="map__routes">
+                <img src="img/routes_krsk-irk.png" alt="favorites" class="btn__icon">
+            </div>
         </div>
     </section>
 

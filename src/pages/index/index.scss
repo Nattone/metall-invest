@@ -5,7 +5,7 @@
     height: 100px;
     left: 50%;
     max-width: 1780px;
-    position: absolute;
+    position: fixed;
     top: 0;
     transform: translate(-50%);
     z-index: 1;
@@ -13,7 +13,7 @@
 
   .section {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: calc(100px + 82px);
 
     &__head {
       display: flex;
@@ -24,7 +24,6 @@
   .primary {
     background-color: colors.$primary;
     background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
-    position: relative;
 
     &::before {
       background-image: url('../img/art-primary.png');
@@ -39,11 +38,67 @@
       top: 0;
       width: 117px;
     }
+
+    &__item {
+      color: colors.$white;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 33px;
+      margin-bottom: 25px;
+      padding-left: 36px;
+
+      &::before {
+        background-color: colors.$white;
+        border-radius: 100%;
+        left: 0;
+        top: 12px;
+      }
+    }
+
+    &__bottom {
+      bottom: 68px;
+      height: 62px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    &__scroll {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 70px;
+      cursor: pointer;
+      height: 50px;
+      left: 50%;
+      position: relative;
+      top: 12px;
+      transform: translateX(-50%);
+      width: 30px;
+
+      &:hover {
+        &::before {
+          transform: translate(-50%, 24px);
+        }
+      }
+
+      &::before {
+        background-color: rgba(255, 255, 255, 0.4);
+        border: none;
+        border-radius: 100%;
+        content: '';
+        height: 6px;
+        left: 50%;
+        position: absolute;
+        top: 10px;
+        transform: translate(-50%, 0);
+        transition: transform 0.5s ease;
+        width: 6px;
+      }
+    }
   }
 
   .production {
-    position: relative;
-
     &::before {
       background-image: url('../img/art-production.png');
       background-position: bottom;
@@ -71,7 +126,6 @@
     background-color: #30487e;
     background-image: linear-gradient(180deg, rgba(0, 10, 82, 0.15) 17.84%, rgba(10, 21, 48, 0.72) 89.77%);
     mix-blend-mode: multiply;
-    position: relative;
 
     @keyframes ticker {
       from {
@@ -93,7 +147,7 @@
     }
 
     &__ticker {
-      animation: ticker 5s linear infinite;
+      animation: ticker 8s linear infinite;
       background-image: url('../img/art-advantages_ticker_.png');
       background-position-y: bottom;
       background-repeat: repeat-x;
@@ -104,6 +158,36 @@
       left: 0;
       position: absolute;
       width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .team {
+    background-color: #edecf2;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      // width: 22.22%;
+      width: 20%;
+    }
+  }
+
+  .partners {
+    &::before {
+      background-image: url('../img/art-partners.svg');
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
     }
   }
 
@@ -112,7 +196,6 @@
     background-image: url('../img/bg-map.png');
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
 
     &__item {
       background-color: #4878d3;

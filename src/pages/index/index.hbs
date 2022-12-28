@@ -20,8 +20,10 @@
                 </ul>
             </div>
             <div class="primary__slider"></div>
-            <div class="primary__widget"></div>
-            <button class="primary__scroll"></button>
+            <div class="primary__bottom">
+                <div class="primary__widget"></div>
+                <button class="primary__scroll"></button>
+            </div>
 
         </div>
     </section>
@@ -58,9 +60,6 @@
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.team.btn}}</button>
             </div>
             <ul class="team__list">
-                {{!-- {{#each pages.main-page.team.item}}
-                    <li class="team__item content__item">{{this.item}}</li>
-                {{/each}} --}}
 
                 {{#each pages.main-page.team.item}}
                     {{> team/item item=this }}

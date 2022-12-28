@@ -180,8 +180,9 @@ p {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
-    mix-blend-mode: multiply;
     padding: 0 24px;
+
+    // mix-blend-mode: multiply;
   }
 
   &_light {

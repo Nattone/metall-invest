@@ -1,0 +1,35 @@
+<div class="primary__slider glide">
+    <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+            <a class="glide__slide" href="">
+                <div class="primary__content">
+                    <h1 class="primary__title">{{pages.main-page.primary.title}}</h1>
+                    <ul class="primary__list content__list">
+
+                        {{#each pages.main-page.primary.list}}
+                            <li class="primary__item content__item">{{this.item}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <img class="glide__image" src="img/content/partners1.png" alt="">
+            </a>
+            <a class="glide__slide" href="">
+                <img class="glide__image" src="img/content/partners2.png" alt="">
+            </a>
+            <a class="glide__slide" href="">
+                <img class="glide__image" src="img/content/team3-1.png.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow_left button" data-glide-dir="<">left</button>
+        <button class="glide__arrow glide__arrow_right button" data-glide-dir=">">right</button>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0">1</button>
+        <button class="glide__bullet" data-glide-dir="=1">2</button>
+        <button class="glide__bullet" data-glide-dir="=2">3</button>
+        <button class="glide__bullet" data-glide-dir="=4">4</button>
+    </div>
+</div>

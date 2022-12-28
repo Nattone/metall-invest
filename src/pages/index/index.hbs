@@ -10,16 +10,9 @@
 <main class="main">
     <section class="primary section">
         <div class="container">
-            <div class="primary__content">
-                <h1 class="primary__title">{{pages.main-page.primary.title}}</h1>
-                <ul class="primary__list content__list">
-
-                    {{#each pages.main-page.primary.list}}
-                        <li class="primary__item content__item">{{this.item}}</li>
-                    {{/each}}
-                </ul>
-            </div>
-            <div class="primary__slider"></div>
+        
+            {{> slider/slider }}
+        
             <div class="primary__bottom">
                 <div class="primary__widget"></div>
                 <button class="primary__scroll"></button>

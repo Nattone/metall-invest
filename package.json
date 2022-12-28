@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "axios": "^1.1.2",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"

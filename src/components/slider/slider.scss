@@ -1,0 +1,11 @@
+@use '~/styles/colors';
+
+.glide {
+  &__slides {
+    display: flex;
+  }
+
+  &__slide {
+    // display: block;
+  }
+}

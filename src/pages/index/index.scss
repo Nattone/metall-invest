@@ -13,7 +13,6 @@
 
   .section {
     min-height: 100vh;
-    padding-top: calc(100px + 82px);
 
     &__head {
       display: flex;
@@ -35,7 +34,9 @@
   .primary {
     background-color: colors.$primary;
     background-image: linear-gradient(111.31deg, #4a6cba -0.2%, #21345e 71.72%);
+    display: flex;
     overflow-x: hidden;
+    padding-top: 145px; // header 94 + 51
 
     &::before {
       background-image: url('../img/art-primary.png');
@@ -51,41 +52,128 @@
       width: 117px;
     }
 
-    &__item {
-      color: colors.$white;
-      font-size: 26px;
-      font-weight: 600;
-      line-height: 33px;
-      margin-bottom: 25px;
-      padding-left: 36px;
+    .container {
+      padding-bottom: 60px;
+      z-index: 1;
+    }
 
-      &::before {
-        background-color: colors.$white;
-        border-radius: 100%;
-        left: 0;
-        top: 12px;
+    .glide {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &__slider {
+      height: 100%;
+    }
+
+    &__track,
+    &__slides {
+      flex-grow: 1;
+    }
+
+    &__slides {
+      display: flex;
+    }
+
+    &__slide {
+      display: flex;
+      flex-wrap: nowrap;
+
+      &__content {
+        color: colors.$white;
+        padding-right: 86px;
+        width: 50%;
+      }
+
+      &__item {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 33px;
+        margin-bottom: 25px;
+        padding-left: 36px;
+
+        &::before {
+          background-color: colors.$white;
+          border-radius: 100%;
+          left: 0;
+          top: 12px;
+        }
+      }
+
+      &__image {
+        max-width: 50%;
+        object-fit: contain;
+        width: 100%;
       }
     }
 
+    &__navigation {
+      backdrop-filter: blur(50px);
+      background-color: #4f6393;
+      background-image: rgba(255, 255, 255, 0.15);
+      border-radius: 5px;
+      bottom: 8px;
+      padding: 20px 30px;
+      position: relative;
+    }
+
+    &__arrows {
+      display: flex;
+    }
+
+    &__arrow,
+    &__bullet {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__arrow {
+      background-image: url('../img/icon-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 23px;
+      opacity: 0.8;
+      position: relative;
+      transition: opacity 0.3s ease;
+      width: 14px;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &_right {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__bullets {
+      padding: 0 20px;
+    }
+
+    &__bullet {
+      color: colors.$white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      padding: 0 10px;
+    }
+
     &__bottom {
-      bottom: 68px;
-      height: 62px;
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-      width: 100%;
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__scroll {
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.4);
       border-radius: 70px;
+      bottom: 14px;
       cursor: pointer;
       height: 50px;
-      left: 50%;
       position: relative;
-      top: 12px;
-      transform: translateX(-50%);
       width: 30px;
 
       &:hover {
@@ -108,9 +196,17 @@
         width: 6px;
       }
     }
+
+    &__widget {
+      background-color: #fff;
+      height: 149px;
+      width: 190px;
+    }
   }
 
   .production {
+    padding-top: 195px; // header 94 + 101
+
     &::before {
       background-image: url('../img/art-production.png');
       background-position: bottom;
@@ -146,6 +242,8 @@
     background-color: #30487e;
     background-image: linear-gradient(180deg, rgba(0, 10, 82, 0.15) 17.84%, rgba(10, 21, 48, 0.72) 89.77%);
     mix-blend-mode: multiply;
+    padding-bottom: 38px;
+    padding-top: 116px; // header 94 + 22
 
     @keyframes ticker {
       from {
@@ -160,10 +258,6 @@
     &__title {
       color: colors.$white;
       text-align: center;
-    }
-
-    &__list {
-      margin-bottom: 38px;
     }
 
     &__ticker {
@@ -184,6 +278,7 @@
 
   .team {
     background-color: #edecf2;
+    padding-top: 176px; // header 94 + 82
 
     .section__head {
       margin-bottom: 24px;
@@ -204,6 +299,8 @@
   }
 
   .partners {
+    padding-top: 176px; // header 94 + 82
+
     &::before {
       background-image: url('../img/art-partners.svg');
       background-position-x: center;
@@ -224,6 +321,7 @@
     background-image: url('../img/bg-map.png');
     background-repeat: no-repeat;
     background-size: contain;
+    padding-top: 88px;
 
     &__title,
     &__blockquote {

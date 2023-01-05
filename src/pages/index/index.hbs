@@ -11,11 +11,51 @@
     <section class="primary section">
         <div class="container">
         
-            {{> slider/slider }}
-        
-            <div class="primary__bottom">
-                <div class="primary__widget"></div>
-                <button class="primary__scroll"></button>
+            {{!-- {{> slider/slider }} --}}
+
+            <div class="glide">
+                <div class="primary__slider">
+                    <div class="glide__track primary__track" data-glide-el="track">
+                        <div class="glide__slides primary__slides">
+                            <a class="glide__slide primary__slide" href="">
+                                <div class="primary__slide__content">
+                                    <h1 class="primary__slide__title">{{pages.main-page.primary.title}}</h1>
+                                    <ul class="primary__slide__list content__list">
+
+                                        {{#each pages.main-page.primary.list}}
+                                            <li class="primary__slide__item content__item">{{this.item}}</li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                                <img class="glide__image primary__slide__image" src="img/content/partners1.png" alt="">
+                            </a>
+                            <a class="glide__slide" href="">
+                                <img class="glide__image primary__slide__image" src="img/content/partners2.png" alt="">
+                            </a>
+                            <a class="glide__slide" href="">
+                                <img class="glide__image primary__slide__image" src="img/content/team3-1.png.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="primary__bottom">
+                    <div class="glide__navigation primary__navigation">
+                        <div class="glide__arrows primary__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow_left button primary__arrow primary__arrow_left" data-glide-dir="<"></button>
+                            <div class="glide__bullets primary__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet primary__bullet" data-glide-dir="=0">01</button>
+                                <button class="glide__bullet primary__bullet" data-glide-dir="=1">02</button>
+                                <button class="glide__bullet primary__bullet" data-glide-dir="=2">03</button>
+                                <button class="glide__bullet primary__bullet" data-glide-dir="=4">04</button>
+                            </div>
+                            <button class="glide__arrow glide__arrow_right button primary__arrow primary__arrow_right" data-glide-dir=">"></button>
+                        </div>
+                    </div>
+                    
+                    <button class="primary__scroll"></button>
+                    <div class="primary__widget"></div>
+                </div>
             </div>
 
         </div>

@@ -1,0 +1,35 @@
+@use '~/styles/colors';
+
+.catalog {
+  .main {
+    padding-bottom: 200px;
+    position: relative;
+
+    &::before {
+      background-image: url('../img/catalog-art.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: '';
+      height: 180px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  // &__menu {}
+
+  &__list {
+    display: flex;
+
+    // &__item {}
+
+    &__image {
+      width: 33.3%;
+    }
+  }
+
+  // &__sublist {}
+}

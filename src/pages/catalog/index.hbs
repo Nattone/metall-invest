@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.catalog.pageTitle
+    class="catalog"
+}}
+
+{{> layout/header title='pages.catalog.title'}}
+
+<main class="main">
+    <div class="container">
+        {{> common/breadcrumbs}}
+        <h1 class="title catalog__title">{{pages.catalog.title}}<span class="title_highlighted catalog__title_highlighted">{{pages.catalog.title-highlighted}}</span></h1>
+        <div class="catalog__menu">
+            <ul class="catalog__list">
+                <li class="catalog__list__item">
+                    <img src="img/content/partners1.png" alt="" class="catalog__list__image">
+                    <a class="catalog__list__name" href="">Металлопрокат</a>
+                    <ul class="catalog__sublist">
+                        <li class="catalog__sublist__item">1</li>
+                        <li class="catalog__sublist__item">2</li>
+                        <li class="catalog__sublist__item">3</li>
+                    </ul>
+                </li>
+                <li class="catalog__list__item">
+                    <ul class="catalog__sublist">
+                        <li class="catalog__sublist__item">4</li>
+                        <li class="catalog__sublist__item">5</li>
+                        <li class="catalog__sublist__item">6</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.subcatalog.pageTitle
+    class="subcatalog"
+}}
+
+{{> layout/header title='pages.subcatalog.title'}}
+
+<main class="main">
+    <div class="container">
+        {{> common/breadcrumbs}}
+        <h1 class="title subcatalog__title">{{pages.subcatalog.title}}<span class="title_highlighted subcatalog__title_highlighted">{{pages.subcatalog.title-highlighted}}</span></h1>
+    </div>
+
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

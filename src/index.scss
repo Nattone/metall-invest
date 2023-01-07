@@ -41,7 +41,8 @@ h5 {
   padding: 0;
 }
 
-h1 {
+h1,
+.title {
   font-size: 74px;
   line-height: 95px;
 
@@ -57,6 +58,13 @@ h1 {
   //   @media (max-width: 480px) {
   //     font-size: 20px;
   //   }
+}
+
+.title {
+  &_highlighted {
+    color: #4878d3;
+    padding-left: 16px;
+  }
 }
 
 h2 {
@@ -187,7 +195,7 @@ p {
   }
 
   &_light {
-    background-color: #edecf2;
+    background-color: #dcdae6;
     color: #30487e;
 
     &:hover {
@@ -208,6 +216,52 @@ p {
   &__icon {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.breadcrumbs {
+  &__list {
+    //   overflow: auto;
+    white-space: nowrap;
+  }
+
+  &__item {
+    color: #9a9aab;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-right: 12px;
+    position: relative;
+    text-transform: uppercase;
+
+    + .breadcrumbs__item {
+      padding-left: 24px;
+
+      &::before {
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #9a9aab;
+        content: '/';
+        height: 24px;
+        left: 0;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        width: 11px;
+      }
+    }
+
+    &__link {
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      .breadcrumbs__item__link {
+        color: #4878d3;
+      }
+    }
   }
 }
 
@@ -266,7 +320,7 @@ p {
   }
 
   &__arrow {
-    background-color: #edecf2;
+    background-color: #dcdae6;
     height: 40px;
     position: relative;
     width: 40px;

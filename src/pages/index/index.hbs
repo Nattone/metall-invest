@@ -93,12 +93,11 @@
                 <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.team.btn}}</button>
             </div>
-            <ul class="team__list">
-
+            <div class="team__block">
                 {{#each pages.main-page.team.item}}
                     {{> team/item item=this }}
                 {{/each}}
-            </ul>
+            </div>
         </div>
     </section>
     <section class="partners section">
@@ -109,6 +108,24 @@
                 <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.partners.btn}}</button>
             </div>
+            <div class="glide">
+                <div class="partners__carousel glide__carousel scrollbar">
+                    <div class="partners__track glide__track" data-glide-el="track">
+                        <div class="partners__slides glide__slides">
+                            {{#each pages.main-page.partners.slides}}
+                                {{> partners/item slides=this }}
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="partners__navigation glide__navigation">
+                        <div class="glide__arrows partners__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow_left btn btn_round partners__arrow partners__arrow_left" data-glide-dir="<"></button>
+                            <button class="glide__arrow glide__arrow_right btn btn_round partners__arrow partners__arrow_right" data-glide-dir=">"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

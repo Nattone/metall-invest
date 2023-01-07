@@ -230,3 +230,64 @@ p {
 .flex-separator {
   flex-grow: 1;
 }
+
+.scrollbar {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #4878d3 #edecf2; // opacity 05
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    appearance: none;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #4878d3;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: #edecf2;
+    border-radius: 20px;
+    opacity: 0.5;
+  }
+}
+
+.glide {
+  padding-top: 104px;
+  position: relative;
+
+  &__navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__arrow {
+    background-color: #edecf2;
+    height: 40px;
+    position: relative;
+    width: 40px;
+
+    &::before {
+      background-image: url('../img/icon-arrow_big.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 9px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+    }
+
+    &_left {
+      &::before {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+    }
+  }
+}

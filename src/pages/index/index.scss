@@ -288,7 +288,7 @@
       margin-bottom: 0;
     }
 
-    &__list {
+    &__block {
       display: flex;
     }
 
@@ -313,6 +313,20 @@
       top: 0;
       width: 100%;
       z-index: -1;
+    }
+
+    .section__head {
+      margin-bottom: 36px;
+    }
+
+    &__carousel {
+      padding-bottom: 44px;
+    }
+
+    &__slides {
+      border: 0.5px solid #d7d5e0;
+      display: flex;
+      width: 100%;
     }
   }
 

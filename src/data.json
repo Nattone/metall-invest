@@ -224,7 +224,45 @@
         "title_accent": "партнёры",
         "btn": "Подробнее о партнёрах",
         "blockquote": "«Нашим партнерам можно доверять! Мы сотрудничаем с надежными транспортными компаниями и крупнейшими заводами металлопроката",
-        "item": []
+        "slides": [
+          {
+            "item": [
+              {
+                "img": "img/content/partners1.png"
+              },
+              {
+                "img": "img/content/partners2.png"
+              }
+            ]
+          },{
+            "item": [
+              {
+                "img": "img/content/partners3.png"
+              },
+              {
+                "img": "img/content/partners4.png"
+              }
+            ]
+          },{
+            "item": [
+              {
+                "img": "img/content/partners5.png"
+              },
+              {
+                "img": "img/content/partners6.png"
+              }
+            ]
+          },{
+            "item": [
+              {
+                "img": "img/content/partners7.png"
+              },
+              {
+                "img": "img/content/partners8.png"
+              }
+            ]
+          }
+        ]
       },
       "map": {
         "title": "Ваши товары на карте ",

@@ -1,0 +1,25 @@
+@use '~/styles/colors';
+
+.partners__slide {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  align-items: center;
+  border: 0.5px solid #d7d5e0;
+  display: flex;
+  flex-grow: 1;
+  height: 50%;
+  justify-content: center;
+  padding: 18px;
+  width: 100%;
+
+  // & + .partners__item {
+  //     border-top: 1px solid #D7D5E0;
+  // }
+
+  &__image {
+    max-height: 200px;
+  }
+}

@@ -1,17 +1,38 @@
 @use '~/styles/colors';
 
 .card {
-  border: 1px solid rgb(127 127 150 / 0.2);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  margin-bottom: 30px;
+  max-width: 25%;
+  padding: 0 14px;
+  width: 100%;
 
   &:hover {
-    .card__price,
+    .card__container {
+      background-color: colors.$white;
+    }
+
+    .card__image {
+      transform: scale(80%);
+      transform-origin: top;
+    }
+
+    .card__price {
+      display: inline-block;
+    }
+
     .card__btn-more {
       display: block;
     }
+  }
+
+  &__container {
+    background-color: transparent;
+    border: 1px solid rgb(127 127 150 / 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    transition: background 0.3s ease;
   }
 
   &__wrapper {
@@ -22,7 +43,10 @@
     position: relative;
   }
 
-  // &__image {}
+  &__image {
+    object-fit: contain;
+    width: 100%;
+  }
 
   &__btn-favourite {
     background-color: #f8f8fa;
@@ -72,7 +96,9 @@
     }
   }
 
-  // &__description {}
+  &__description {
+    padding: 0 6px;
+  }
 
   &__name,
   &__parameter {
@@ -88,6 +114,7 @@
 
   &__parameter {
     font-weight: 700;
+    margin-bottom: 26px;
   }
 
   &__price,
@@ -96,6 +123,12 @@
   }
 
   &__price {
+    color: #4878d3;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    padding-right: 20px;
     position: relative;
 
     &::before {
@@ -105,5 +138,15 @@
       right: 0;
       top: 0;
     }
+  }
+
+  &__btn-more {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
   }
 }

@@ -25,7 +25,7 @@
     }
 
     &__line {
-      background-color: #fff;
+      //   background-color: #fff;
       display: block;
       height: 3px;
       left: 0;
@@ -35,7 +35,7 @@
       width: 100%;
 
       &::after {
-        background-color: #fff;
+        // background-color: #fff;
         content: '';
         height: 3px;
         left: 0;
@@ -62,12 +62,7 @@
 
     .btn_round {
       // backdrop-filter: blur(50px);
-      background-color: rgb(76 110 189 / 0.4);
       transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: rgb(76 110 189 / 0.6);
-      }
 
       & + .btn_round {
         margin-left: 32px;
@@ -76,7 +71,6 @@
   }
 
   &__phone {
-    color: colors.$white;
     font-size: 20px;
     font-weight: 800;
     line-height: 1.3;
@@ -84,8 +78,8 @@
   }
 
   &__call {
-    // background-color: colors.$btn;
-    // color: colors.$white;
+    background-color: colors.$btn;
+    color: colors.$white;
     height: 58px;
     margin-left: 12px;
     padding: 0 30px;
@@ -94,6 +88,80 @@
 
     &:hover {
       background-color: colors.$btn-hover;
+    }
+  }
+
+  // БЕЛОЕ МЕНЮ
+  &_dark {
+    .header__menu__line {
+      background-color: colors.$white;
+
+      &::after {
+        background-color: colors.$white;
+      }
+    }
+
+    .search {
+      &__input {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: colors.$white;
+
+        &::placeholder {
+          color: colors.$white;
+        }
+      }
+    }
+
+    .btn_round {
+      background-color: rgb(76 110 189 / 0.4);
+
+      &:hover {
+        background-color: rgb(76 110 189 / 0.6);
+      }
+    }
+
+    .header__phone {
+      color: colors.$white;
+    }
+  }
+
+  // ТЁМНОЕ МЕНЮ
+  &_light {
+    background-color: colors.$white;
+    border-bottom: 1px solid #ccccd5;
+    color: colors.$white;
+
+    .header__menu__line {
+      background-color: #30487e;
+
+      &::after {
+        background-color: #30487e;
+      }
+    }
+
+    .search {
+      &__input {
+        background-color: #edecf2;
+
+        // background-color: rgb(237 236 242 / 0.4);
+        color: #30487e;
+
+        &::placeholder {
+          color: #7f7f96;
+        }
+      }
+    }
+
+    .btn_round {
+      background-color: rgb(220 218 230 / 0.4);
+
+      &:hover {
+        background-color: rgb(220 218 230 / 0.6);
+      }
+    }
+
+    .header__phone {
+      color: #30487e;
     }
   }
 }

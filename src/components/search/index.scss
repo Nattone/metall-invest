@@ -9,20 +9,14 @@
 
   &__input {
     backdrop-filter: blur(50px);
-    background-color: rgba(255, 255, 255, 0.4);
     border: none;
     border-radius: 5px;
-    color: colors.$white;
     font-size: 16px;
     font-weight: 600;
     height: 42px;
     outline: none;
     padding: 0 14px 0 18px;
     width: 100%;
-
-    &::placeholder {
-      color: colors.$white;
-    }
   }
 
   &__btn {

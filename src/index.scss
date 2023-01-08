@@ -137,15 +137,16 @@ p {
 
 .container {
   margin: 0 auto;
-  max-width: 1780px;
+  max-width: 1880px;
+  padding: 0 50px;
   width: 100%;
 
   // padding: 0 10px;
 
-  // @media (max-width: 1600px) {
-  //   max-width: 1440px;
-  //   padding: 0 20px;
-  // }
+  @media (max-width: 1600px) {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
 
   // @media (max-width: 480px) {
   //   padding: 0 16px;
@@ -217,6 +218,27 @@ p {
     display: block;
     margin: 0 auto;
   }
+
+  &_more {
+    background-color: transparent;
+    background-image: url('../img/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    height: 23px;
+    opacity: 0.8;
+    position: relative;
+    transition: opacity 0.3s ease;
+    width: 14px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_right {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .breadcrumbs {
@@ -265,6 +287,67 @@ p {
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__page {
+    background-color: transparent;
+    border-radius: 5px;
+
+    //   color: colors.$text-secondary;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    letter-spacing: 0.05em;
+    line-height: 50px;
+    margin: 0 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 50px;
+
+    //   @media (max-width: 767px) {
+    // 	font-size: 14px;
+    // 	height: 40px;
+    // 	line-height: 40px;
+    // 	width: 40px;
+    //   }
+
+    &:hover,
+    &:focus {
+      // background-color: colors.$blue;
+      color: colors.$white;
+    }
+
+    &_active,
+    &_active:hover,
+    &_active:focus {
+      // background-color: colors.$orange;
+      color: colors.$white;
+    }
+  }
+
+  .button_more {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    //   @media (max-width: 767px) {
+    // 	height: 40px;
+    // 	width: 40px;
+    //   }
+
+    &:hover {
+      // background-color: colors.$orange;
+      color: colors.$white;
+    }
+
+    &::after {
+      height: 7px;
+      width: 12px;
+    }
+  }
+}
+
 .section {
   position: relative;
 
@@ -309,7 +392,7 @@ p {
   }
 }
 
-.glide {
+.carousel {
   padding-top: 104px;
   position: relative;
 

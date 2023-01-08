@@ -99,20 +99,23 @@
       "phone": "8 (391) 2-180-100",
       "phone-link": "+73912180100",
       "email": "оffice@metall-in.ru"
-    },
-    "breadcrumbs": {
-      "list": [
-        {
-          "name": "Главная",
-          "item": "#"
-        },
-        {
-          "name": "неГлавная",
-          "item": "#"
-        }
-      ]
     }
   },
+  "components": [{
+    "card": [{
+      "link": "#",
+      "image": "img/content/card1.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card2.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    }]
+  }],
   "pages": {
     "all": {
       "pageTitle": "Страницы"

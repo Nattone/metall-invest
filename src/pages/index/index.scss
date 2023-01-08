@@ -129,24 +129,7 @@
       cursor: pointer;
     }
 
-    &__arrow {
-      background-image: url('../img/icon-arrow.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 23px;
-      opacity: 0.8;
-      position: relative;
-      transition: opacity 0.3s ease;
-      width: 14px;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &_right {
-        transform: rotate(180deg);
-      }
-    }
+    // &__arrow {}
 
     &__bullets {
       padding: 0 20px;

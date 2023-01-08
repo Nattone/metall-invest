@@ -1,8 +1,56 @@
 .subcatalog {
   background-color: #edecf2;
 
+  .title {
+    margin-bottom: 60px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -14px;
+  }
+
+  &__filter {
+    &__list {
+      display: flex;
+      margin: 0 -15px 40px;
+    }
+
+    &__item {
+      background-color: transparent;
+      border: 1px solid rgb(127 127 150 / 0.3);
+      border-radius: 100px;
+      color: #7f7f96;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      margin: 0 15px;
+      padding: 20px 50px;
+      position: relative;
+      transition: all 0.3s ease;
+
+      &:hover,
+      & + ._active {
+        border-color: #4775d0;
+        color: #30487e;
+      }
+
+      & + ._active {
+        padding-left: 72px;
+
+        &::before {
+          background-color: #4878d3;
+          content: '';
+          height: 10px;
+          left: 48px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+        }
+      }
+    }
   }
 }

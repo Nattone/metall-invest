@@ -10,8 +10,15 @@
 <main class="main">
     <div class="container">
         {{> common/breadcrumbs items=pages.subcatalog.breadcrumbs}}
-        <h1 class="title subcatalog__title">{{pages.subcatalog.title}}<span class="title_highlighted subcatalog__title_highlighted">{{pages.subcatalog.title-highlighted}}</span></h1>
+        <h2 class="title subcatalog__title">{{pages.subcatalog.title}}<span class="title_highlighted subcatalog__title_highlighted">{{pages.subcatalog.title-highlighted}}</span></h2>
 
+        <div class="subcatalog__filter">
+            <div class="subcatalog__filter__list">
+                <button class="subcatalog__filter__item">Aрматура А1, гладкая</button>
+                <button class="subcatalog__filter__item">Арматура А3, рифленая</button>
+                <button class="subcatalog__filter__item _active">Арматура А3, рифленая</button>
+            </div>
+        </div>
         <div class="subcatalog__list">
 
             {{#each components}}

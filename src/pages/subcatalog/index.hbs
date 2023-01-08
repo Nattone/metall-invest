@@ -9,8 +9,12 @@
 
 <main class="main">
     <div class="container">
-        {{> common/breadcrumbs}}
+        {{> common/breadcrumbs items=pages.subcatalog.breadcrumbs}}
         <h1 class="title subcatalog__title">{{pages.subcatalog.title}}<span class="title_highlighted subcatalog__title_highlighted">{{pages.subcatalog.title-highlighted}}</span></h1>
+
+        <div class="catalog__list">
+            {{> card/item}}
+        </div>
     </div>
 
 

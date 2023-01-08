@@ -288,7 +288,13 @@
     },
     "subcatalog": {
       "pageTitle": "ПодКаталог",
-      "title": "Арматура строительная"
+      "title": "Арматура строительная",
+      "breadcrumbs": [{
+        "title": "Main",
+        "link": "#"
+      },{
+        "title": "NEMain"
+      }]
     }
   }
 }

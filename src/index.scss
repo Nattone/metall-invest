@@ -288,6 +288,7 @@ p {
     &:hover {
       .breadcrumbs__item__link {
         color: #4878d3;
+        text-decoration: underline;
       }
     }
   }

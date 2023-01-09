@@ -1,0 +1,113 @@
+:root {
+  --duration: 9000ms;
+}
+
+.animation {
+  align-items: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .test {
+    bottom: 46%;
+    left: 53%;
+    position: absolute;
+    right: 63%;
+    top: 40%;
+  }
+
+  svg,
+  .animation {
+    height: 200px;
+    position: relative;
+    width: 400px;
+  }
+
+  path {
+    stroke: #d8d8dd;
+    stroke-width: 2px;
+  }
+
+  svg {
+    position: absolute;
+  }
+
+  .mover {
+    align-items: center;
+
+    // offset-anchor: var(--anchorX) var(--anchorY);
+    animation: move-along var(--duration) 0ms infinite alternate ease-in-out;
+    background: hsla(183%, 90%, 54%, 0.3);
+    border: 2px solid red;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    offset-path: path(
+      'M0.981445 0.51709C8.53245 7.90018 16.6162 13.9882 33.2151 13.9882C48.3882 13.9882 61.4732 11.0096 74.1406 11.7056C85.3975 12.3241 95.7534 17.064 104.045 27.3612C109.637 34.3061 107 39.9798 116.076 44.0732C127.113 49.0504 133.032 43.8797 139.014 48.4012C143.383 51.7028 143.402 59.1518 155.028 60.5195C166.653 61.8872 160.827 70.5326 164.333 73.2869C167.363 75.6673 170.81 78.4607 172.406 77.7768'
+    );
+    offset-rotate: auto 90deg;
+
+    // --anchorX: 50%;
+    // --anchorY: 50%;
+
+    position: absolute;
+    width: 50px;
+  }
+
+  .mover.anchor {
+    background: red;
+    border: none;
+    border-radius: 50%;
+    bottom: 0;
+    content: '';
+    height: 6px;
+    left: 0;
+    offset-anchor: center center;
+    position: absolute;
+    top: 0;
+    width: 6px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  //   @supports (offset-anchor: 70% 70%) {
+  //     aside {
+  //       display: grid;
+  //     }
+  //   }
+
+  /*
+  @supports (offset-position: 70% 70%) {
+    #position {
+      display: block;
+    }
+  }
+  */
+  // @keyframes move-along {
+  //   100% {
+  //     offset-distance: 100%;
+  //   }
+  // }
+
+  //   aside {
+  //       margin: 0rem 1rem;
+  //       grid-template-columns: 4em 1fr 4em;
+  //       grid-gap: 1em;
+  //   }
+  label {
+    text-align: right;
+  }
+
+  input {
+    margin-bottom: 1rem;
+  }
+
+  output {
+    opacity: 0.7;
+  }
+}

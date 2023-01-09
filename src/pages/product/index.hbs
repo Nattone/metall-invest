@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.product.pageTitle
+    class="product"
+}}
+
+{{> layout/header title='pages.product.title'}}
+
+<main class="main">
+    <div class="container">
+        <div class="product__card">
+            <div class="product__card__left">
+                <img src="{{pages.product.image}}" alt="" class="product__image">
+            </div>
+            <div class="product__card__right">
+                <div class="product__card__head">
+                    {{> common/breadcrumbs items=pages.product.breadcrumbs}}
+                    <div class="product__vendor-code">{{pages.product.vendor-code}}</div>
+                </div>
+                <h2 class="title product__title">{{pages.product.title}}</span></h2>
+                <div class="product__price">
+                    <p class="product__price__old">{{pages.product.price-old}}</p>
+                    <p class="product__price__new">{{pages.product.price-new}}</p>
+                </div>
+                <div class="product__about">
+                    <div class="product__about__chapter">
+                        <p class="product__about__title">Описание:</p>
+                        <p class="product__about__text">Aрматура А1 25 мм, ГОСТ 5781-82, Ст.3ПС/СП в наличии и под заказ в Красноярске, Москве, Иркутске и других городах присутствия предлагается к продаже компанией «МеталлИнвест».</p>
+                    </div>
+                    <div class="product__about__chapter product__about__chapter_separated">
+                        <p class="product__about__title">Услуги:</p>
+                        <ul class="product__about__list">
+                            {{#each pages.product.list}}
+                                <li class="product__about__item">{{this.item}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="product__about__chapter product__about__chapter_technical">
+                        <p class="product__about__title">Технические характеристики:</p>
+                        {{#each pages.product.technical}}
+                            <p class="product__about__text">
+                                <span class="product__about__caption">{{this.caption}}</span>
+                                <span class="product__about__value">{{this.value}}</span>
+                            </p>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="product__card__footer">
+                    <button class="product__btn product__btn_contact btn btn_dark">Связаться с менеджером</button>
+                    <button class="product__btn product__btn_favourite btn">Добавить в избранное</button>
+                    <div class="product__widget"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

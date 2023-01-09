@@ -287,16 +287,101 @@
     "catalog": {
       "pageTitle": "Каталог",
       "title": "Каталог",
-      "title-highlighted": "продуктов"
+      "title-highlighted": "продуктов",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Каталог"
+        }
+      ]
     },
     "subcatalog": {
       "pageTitle": "ПодКаталог",
       "title": "Арматура строительная",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Каталог",
+          "link": "catalog.html"
+        },{
+          "title": "Подкаталог"
+        }
+      ]
+    },
+    "product": {
+      "pageTitle": "Деталка товара",
+      "title": "Арматура А1 гладкая из стали Ст3пс/сп, ГОСТ 5781-82 и возможно еще какое то длинное название",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Каталог",
+          "link": "catalog.html"
+        },{
+          "title": "Подкаталог",
+          "link": "subcatalog.html"
+        },{
+          "title": "Продукт"
+        }
+      ],
+      "image": "img/content/card1.png",
+      "vendor-code": "Арт. 13376752",
+      "price-old": "61 000",
+      "price-new": "60 000",
+      "list": [
+        {
+          "item": "Плазенная резка металла"
+        },
+        {
+          "item": "Гибка металла"
+        },
+        {
+          "item": "Производство сетки нестандартного размера"
+        },
+        {
+          "item": "услуги металлообработки"
+        },
+        {
+          "item": "Гибка металла"
+        },
+        {
+          "item": "Производство сетки нестандартного размера"
+        },
+        {
+          "item": "услуги металлообработки"
+        }
+      ],
+      "technical": [
+        {
+          "caption": "Вес:",
+          "value": "1 м.п. 0,23"
+        },
+        {
+          "caption": "Длина:",
+          "value": "1000 мм"
+        },{
+          "caption": "Кол-во метров в тн:",
+          "value": "4347"
+        },{
+          "caption": "Марка стали:",
+          "value": "А500СП"
+        }
+      ]
+
+    },
+    "favourites": {
+      "pageTitle": "Избранное",
+      "title": "Избранное",
       "breadcrumbs": [{
-        "title": "Main",
-        "link": "#"
+        "title": "Главная",
+        "link": "index.html"
       },{
-        "title": "NEMain"
+        "title": "Избранное"
       }]
     }
   }

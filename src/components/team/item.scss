@@ -54,7 +54,7 @@
     width: 58px;
 
     &:hover {
-      background-color: #30487e;
+      background-color: colors.$primary;
     }
 
     &::before {
@@ -72,7 +72,7 @@
   }
 
   &__title {
-    color: #4a4a5f;
+    color: colors.$text-secondary;
     font-weight: 600;
     letter-spacing: 0.03em;
     line-height: 28px;

@@ -24,7 +24,7 @@
     }
 
     &__blockquote {
-      color: #4a4a5f;
+      color: colors.$text-secondary;
       font-size: 24px;
       font-weight: 600;
       line-height: 1.4;
@@ -185,7 +185,7 @@
     }
 
     &__widget {
-      background-color: #fff;
+      background-color: colors.$white;
       height: 149px;
       width: 190px;
     }
@@ -226,7 +226,7 @@
   }
 
   .advantages {
-    background-color: #30487e;
+    background-color: colors.$primary;
     background-image: linear-gradient(180deg, rgba(0, 10, 82, 0.15) 17.84%, rgba(10, 21, 48, 0.72) 89.77%);
     mix-blend-mode: multiply;
     padding-bottom: 38px;
@@ -264,7 +264,7 @@
   }
 
   .team {
-    background-color: #edecf2;
+    background-color: colors.$grey-bg;
     padding-top: 176px; // header 94 + 82
 
     .section__head {
@@ -318,7 +318,7 @@
   }
 
   .map {
-    background-color: #4a4a5f;
+    background-color: colors.$text-secondary;
     background-image: url('../img/bg-map.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -330,7 +330,7 @@
     }
 
     &__item {
-      background-color: #4878d3;
+      background-color: colors.$secondary;
       border-radius: 100%;
       height: 10px;
       position: absolute;

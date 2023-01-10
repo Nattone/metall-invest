@@ -48,7 +48,7 @@
   &__vendor-code {
     border: 1px solid rgb(127 127 150 / 0.3);
     border-radius: 50px;
-    color: #7f7f96;
+    color: colors.$grey-dark;
     font-size: 16px;
     font-weight: 700;
     height: 36px;
@@ -62,7 +62,7 @@
     margin-bottom: 24px;
 
     &__old {
-      color: #7f7f96;
+      color: colors.$grey-dark;
       font-size: 24px;
       font-weight: 700;
       margin-right: 18px;
@@ -73,7 +73,7 @@
 
     &__new {
       // line-height: 41px;
-      color: #4878d3;
+      color: colors.$secondary;
       font-size: 32px;
       font-weight: 800;
     }
@@ -107,14 +107,14 @@
 
     &__title {
       // line-height: 23px;
-      color: #30487e;
+      color: colors.$primary;
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 14px;
     }
 
     &__text {
-      color: #4a4a5f;
+      color: colors.$text-secondary;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
@@ -132,7 +132,7 @@
       width: 50%;
 
       &::before {
-        background-color: #4878d3;
+        background-color: colors.$secondary;
         content: '';
         height: 10px;
         left: 0;
@@ -144,7 +144,7 @@
     }
 
     &__caption {
-      color: #7f7f96;
+      color: colors.$grey-dark;
       margin-right: 10px;
     }
 
@@ -155,7 +155,7 @@
 
   &__btn {
     &_contact,
-    &_favourite {
+    &_favorite {
       position: relative;
 
       &::before {
@@ -180,20 +180,20 @@
       }
     }
 
-    &_favourite {
+    &_favorite {
       background-color: transparent;
-      color: #7f7f96;
+      color: colors.$grey-dark;
       font-size: 16px;
       font-weight: 600;
       padding-left: 36px;
       transition: color 0.3s ease;
 
       &:hover {
-        color: #4878d3;
+        color: colors.$secondary;
       }
 
       &::before {
-        background-image: url('../img/icon-favourite.svg');
+        background-image: url('../img/icon-favorite.svg');
         height: 18px;
         left: 0;
         width: 20px;
@@ -202,7 +202,7 @@
   }
 
   .similar {
-    background-color: #edecf2;
+    background-color: colors.$grey-bg;
     padding: 50px 0 78px;
 
     &__head {
@@ -212,7 +212,7 @@
     }
 
     &__title {
-      color: #141425;
+      color: colors.$text-main;
       font-size: 28px;
       font-weight: 700;
       line-height: 1.4;

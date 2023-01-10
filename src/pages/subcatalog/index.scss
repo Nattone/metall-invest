@@ -1,5 +1,7 @@
+@use '~/styles/colors';
+
 .subcatalog {
-  background-color: #edecf2;
+  background-color: colors.$grey-bg;
 
   .title {
     margin-bottom: 60px;
@@ -21,7 +23,7 @@
       background-color: transparent;
       border: 1px solid rgb(127 127 150 / 0.3);
       border-radius: 100px;
-      color: #7f7f96;
+      color: colors.$grey-dark;
       cursor: pointer;
       font-size: 15px;
       font-weight: 500;
@@ -34,14 +36,14 @@
       &:hover,
       & + ._active {
         border-color: #4775d0;
-        color: #30487e;
+        color: colors.$primary;
       }
 
       & + ._active {
         padding-left: 72px;
 
         &::before {
-          background-color: #4878d3;
+          background-color: colors.$secondary;
           content: '';
           height: 10px;
           left: 48px;

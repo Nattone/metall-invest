@@ -17,10 +17,10 @@
 
       &:hover {
         .item__title {
-          color: #4878d3;
+          color: colors.$secondary;
 
           &::before {
-            background-color: #4878d3;
+            background-color: colors.$secondary;
           }
         }
       }

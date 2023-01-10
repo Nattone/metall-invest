@@ -90,7 +90,7 @@
   }
 
   &__numb {
-    color: #edecf2;
+    color: colors.$grey-bg;
     font-size: 64px;
     font-weight: 800;
     line-height: 82px;
@@ -103,7 +103,7 @@
 
     &__link {
       // line-height: 26px;
-      color: #141425;
+      color: colors.$text-main;
       font-size: 20px;
       font-weight: 600;
     }

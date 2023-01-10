@@ -62,7 +62,7 @@ h1.title {
 
 .title {
   &_highlighted {
-    color: #4878d3;
+    color: colors.$secondary;
     padding-left: 16px;
   }
 }
@@ -165,7 +165,7 @@ p {
     position: relative;
 
     &::before {
-      background-color: #4878d3;
+      background-color: colors.$secondary;
       content: '';
       height: 10px;
       left: 0;
@@ -202,20 +202,20 @@ p {
 
   &_light {
     background-color: #dcdae6;
-    color: #30487e;
+    color: colors.$primary;
 
     &:hover {
-      background-color: #30487e;
+      background-color: colors.$primary;
       color: colors.$white;
     }
   }
 
   &_dark {
-    background-color: #4c6dbb;
+    background-color: colors.$btn;
     color: colors.$white;
 
     &:hover {
-      background-color: #4766ae;
+      background-color: colors.$btn-hover;
     }
   }
 
@@ -254,7 +254,7 @@ p {
   }
 
   &__item {
-    color: #9a9aab;
+    color: colors.$grey-light;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
@@ -269,7 +269,7 @@ p {
       &::before {
         background-repeat: no-repeat;
         background-size: contain;
-        color: #9a9aab;
+        color: colors.$grey-light;
         content: '/';
         height: 24px;
         left: 0;
@@ -287,7 +287,7 @@ p {
 
     &:hover {
       .breadcrumbs__item__link {
-        color: #4878d3;
+        color: colors.$secondary;
         text-decoration: underline;
       }
     }
@@ -308,7 +308,7 @@ p {
   &__page_inactive {
     background-color: transparent;
     border-radius: 5px;
-    color: #7f7f96;
+    color: colors.$grey-dark;
     display: inline-block;
     font-size: 18px;
     font-weight: 600;
@@ -331,7 +331,7 @@ p {
     &_active,
     &:hover,
     &:focus {
-      background-color: #4878d3;
+      background-color: colors.$secondary;
       border-radius: 10px;
       color: colors.$white;
     }
@@ -392,7 +392,7 @@ p {
 .scrollbar {
   overflow-x: scroll;
   scroll-behavior: smooth;
-  scrollbar-color: #4878d3 #edecf2; // opacity 05
+  scrollbar-color: colors.$secondary colors.$grey-bg; // opacity 05
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
@@ -401,13 +401,13 @@ p {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #4878d3;
+    background-color: colors.$secondary;
     border-radius: 20px;
     box-shadow: none;
   }
 
   &::-webkit-scrollbar-track-piece {
-    background-color: #edecf2;
+    background-color: colors.$grey-bg;
     border-radius: 20px;
     opacity: 0.5;
   }

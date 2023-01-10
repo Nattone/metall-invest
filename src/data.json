@@ -101,8 +101,8 @@
       "email": "оffice@metall-in.ru"
     }
   },
-  "components": [{
-    "card": [{
+  "components": {
+    "cards": [{
       "link": "#",
       "image": "img/content/card1.png",
       "name": "Арматура гладкая",
@@ -114,8 +114,38 @@
       "name": "Арматура гладкая",
       "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
       "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card2.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card4.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card3.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card2.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
+    },{
+      "link": "#",
+      "image": "img/content/card1.png",
+      "name": "Арматура гладкая",
+      "parameter": "Размер 20мм ГОСТ 5781-82 Ст.35ГС",
+      "price": "от 61 000"
     }]
-  }],
+  },
   "pages": {
     "all": {
       "pageTitle": "Страницы"
@@ -370,6 +400,45 @@
         },{
           "caption": "Марка стали:",
           "value": "А500СП"
+        }
+      ],
+      "similar": [
+        {
+          "item": [
+            {
+              "img": "img/content/partners1.png"
+            },
+            {
+              "img": "img/content/partners2.png"
+            }
+          ]
+        },{
+          "item": [
+            {
+              "img": "img/content/partners3.png"
+            },
+            {
+              "img": "img/content/partners4.png"
+            }
+          ]
+        },{
+          "item": [
+            {
+              "img": "img/content/partners5.png"
+            },
+            {
+              "img": "img/content/partners6.png"
+            }
+          ]
+        },{
+          "item": [
+            {
+              "img": "img/content/partners7.png"
+            },
+            {
+              "img": "img/content/partners8.png"
+            }
+          ]
         }
       ]
 

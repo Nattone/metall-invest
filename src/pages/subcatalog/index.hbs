@@ -21,8 +21,8 @@
         </div>
         <div class="subcatalog__list">
 
-            {{#each components}}
-                {{> card/item}}
+            {{#each components.cards}}
+                {{> card/item data=this}}
             {{/each}}
         </div>
 

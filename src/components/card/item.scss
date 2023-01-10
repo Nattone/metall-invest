@@ -14,8 +14,7 @@
     }
 
     .card__image {
-      transform: scale(80%);
-      transform-origin: top;
+      width: 60%;
     }
 
     .card__price {
@@ -32,7 +31,7 @@
     border: 1px solid rgb(127 127 150 / 0.2);
     border-radius: 10px;
     padding: 10px;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
   }
 
   &__wrapper {
@@ -44,7 +43,6 @@
   }
 
   &__image {
-    object-fit: contain;
     width: 100%;
   }
 

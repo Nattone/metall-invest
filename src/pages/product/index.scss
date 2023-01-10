@@ -2,11 +2,12 @@
 
 .product {
   .main {
-    padding: 50px 0 78px;
+    padding: 50px 0 0;
   }
 
   &__card {
     display: flex;
+    padding-bottom: 64px;
 
     &__left {
       border: 1px solid #c9c7cf;
@@ -197,6 +198,28 @@
         left: 0;
         width: 20px;
       }
+    }
+  }
+
+  .similar {
+    background-color: #edecf2;
+    padding: 50px 0 78px;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__title {
+      color: #141425;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    &__slides {
+      display: flex;
     }
   }
 }

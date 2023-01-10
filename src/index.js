@@ -31,3 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
   })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  initGlide('.similar__carousel', {
+    perView: 4,
+    startAt: 1,
+    gap: 0,
+    // focusAt: 4 // ?
+    // peek: {
+    //     before: 0,
+    //     after: 0
+    // }
+  })
+})

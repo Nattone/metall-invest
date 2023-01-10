@@ -1,0 +1,69 @@
+@use '~/styles/colors';
+
+.form {
+  background-color: colors.$primary;
+  border-radius: 10px;
+
+  // position: sticky;
+
+  &__head {
+    background: colors.$secondary;
+    border-radius: 10px 10px 0 0;
+    padding: 36px 0;
+
+    &__title {
+      color: colors.$white;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    background-image: url('../img/art-form.svg');
+    background-position: 50% 75px;
+    background-repeat: no-repeat;
+    padding: 60px 30px 75px;
+    position: relative;
+  }
+
+  &__label {
+    color: colors.$white;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+
+    & + .form__label {
+      margin-top: 40px;
+    }
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid colors.$white;
+    color: colors.$white;
+    font-size: 16px;
+    height: 34px;
+    line-height: 20px;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      background-color: #2d4478;
+    }
+  }
+
+  &__btn {
+    background-color: colors.$secondary;
+    color: colors.$white;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 23px;
+    margin-top: 22px;
+    width: 100%;
+  }
+}

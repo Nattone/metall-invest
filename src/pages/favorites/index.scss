@@ -1,0 +1,25 @@
+@use '~/styles/colors';
+
+.favorites {
+  .main {
+    background-color: colors.$grey-bg;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__main {
+    margin: 0 -14px;
+    max-width: calc(75% + 28px);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 33.3%;
+    }
+  }
+}

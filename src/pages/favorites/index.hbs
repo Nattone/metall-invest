@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.favorites.pageTitle
+    class="favorites"
+}}
+
+{{> layout/header title='pages.favorites.title'}}
+
+<main class="main">
+    <div class="container">
+        {{> common/breadcrumbs items=pages.favorites.breadcrumbs}}
+        <h2 class="title favorites__title">{{pages.favorites.title}}<span class="title_highlighted favorites__title_highlighted">{{pages.favorites.title-highlighted}}</span></h2>
+
+        <div class="favorites__cols cols">
+            <div class="favorites__main cols__main">
+                <div class="favorites__list">
+                    {{#each components.cards}}
+                        {{> card/item data=this}}
+                    {{/each}}
+                </div>
+            </div>
+
+            <aside class="favorites__sidebar cols__sidebar">
+                {{> form-contact/index}}
+            </aside>
+        </div>
+
+    </div>
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

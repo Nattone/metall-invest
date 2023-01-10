@@ -9,9 +9,7 @@
   width: 100%;
 
   &:hover {
-    .card__container {
-      background-color: colors.$white;
-    }
+    background-color: colors.$white;
 
     .card__image {
       width: 60%;

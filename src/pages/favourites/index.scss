@@ -1,1 +1,39 @@
 @use '~/styles/colors';
+
+.favorites {
+  .main {
+    background-color: #edecf2;
+  }
+
+  &__cols {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__main {
+    max-width: 75%;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 33.3%;
+    }
+  }
+
+  &__sidebar {
+    max-width: 25%;
+    padding-left: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__contact {
+    background-color: #30487e;
+    border-radius: 10px;
+    position: sticky;
+  }
+}

@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 
 {{#> common/body
-    title=pages.favourites.pageTitle
-    class="favourites"
+    title=pages.favorites.pageTitle
+    class="favorites"
 }}
 
-{{> layout/header title='pages.favourites.title'}}
+{{> layout/header title='pages.favorites.title'}}
 
 <main class="main">
     <div class="container">
-        {{> common/breadcrumbs items=pages.favourites.breadcrumbs}}
-        <h2 class="title favourites__title">{{pages.favourites.title}}<span class="title_highlighted favourites__title_highlighted">{{pages.favourites.title-highlighted}}</span></h2>
+        {{> common/breadcrumbs items=pages.favorites.breadcrumbs}}
+        <h2 class="title favorites__title">{{pages.favorites.title}}<span class="title_highlighted favorites__title_highlighted">{{pages.favorites.title-highlighted}}</span></h2>
 
-        <div class="favourites__list">
+        <div class="favorites__cols">
+            <div class="favorites__main">
+                <div class="favorites__list">
+                    {{#each components.cards}}
+                        {{> card/item data=this}}
+                    {{/each}}
+                </div>
+            </div>
 
-            {{#each components}}
-                {{> card/item}}
-            {{/each}}
+            <aside class="favorites__sidebar">
+                <div class="favorites__contact">
+                    <div class="favorites__contact__head">
+                        <p class="favorites__contact__title">Связаться с нами</p>
+                    </div>
+                    <form class="favorites__contact__form form" action="">
+                        <div class="form__login">
+                            <input class="form__input" size="40" name="login" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form__phone">
+                            <input class="form__input" size="40" name="phone" placeholder="Введите Ваш номер телефона">
+                        </div>
+                        <div class="form__email">
+                            <input class="form__input" size="40" name="email" placeholder="Введите Ваш E-mail">
+                        </div>
+                        <label>
+                            <input type="checkbox" name="titles" class="checkbox_real">
+                            <span class="checkbox_custom"></span>
+                            Заполняя поля данной формы, я соглашаюсь с Политикой конфиденциальности
+                        </label>
+                    </form>
+                </div>
+            </aside>
         </div>
 
-        {{> common/pagination}}
     </div>
-
 
 </main>
 

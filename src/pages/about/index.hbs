@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.about.pageTitle
+    class="about"
+}}
+
+{{> layout/header title='pages.about.title'}}
+
+<main class="main">
+    <div class="container">
+        {{> common/breadcrumbs items=pages.about.breadcrumbs}}
+        <h2 class="title about__title">{{pages.about.title}}<span class="title_highlighted about__title_highlighted">{{pages.about.title-highlighted}}</span></h2>
+
+        <div class="cols cols_wide">
+            <aside class="cols__sidebar">
+                <div class="about__sidebar">
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <a href="" class="about__year">2003</a>
+                        </li>
+                        <li class="about__item _active">
+                            <a href="" class="about__year">2019</a>
+                        </li>
+                        <li class="about__item">
+                            <a href="" class="about__year">2019</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <div class="cols__main">
+                <div class="about__main__cols">
+                    <div class="about__main__left">
+                        <div class="about__carousel">
+                            <img src="img/content/.png" alt="" class="footer__widget">
+                        </div>
+                    </div>
+                    <div class="about__main__right">
+                        <div class="about__content content">
+                            <p class="content__text">Красноярский филиал компании «МеталлИнвест» был открыт в 2003 году.  Сегодня мы представляем собой мощный транспортно-логистический комплекс, занимаемся производством металлоизделий на заказ и отгружаем более 50 000 тонн металлопроката в год.</p>
+                            <h4 class="content__subtitle">Все виды металлопроката, металлоизделий и услуг в одном месте!</h4>
+                            <p class="content__text">Вы представляете строительную организацию и вам нужен партнер, который обеспечит вас металлоизделиями под заказ, соблюдая график отгрузок, а при необходимости предоставит услуги металлообработки в Красноярске ?</p>
+                            <p class="content__text">Звоните в «МеталлИнвест», наш коллектив выполнит задачи любой сложности и любых объемов, наличие цехов и завода металлоизделий на территории Красноярска позволяют нам предлагать лучшие условия, низкие цены и все типы металлоизделий.</p>
+                            <ul class="content__list">
+                                <li class="content__item">широкий сортамент продукции;</li>
+                                <li class="content__item">широкий сортамент продукции;</li>
+                            </ul>
+                            <h4 class="content__subtitle content__subtitle_tight">Склады</h4>
+                            <p class="content__text">Сотрудники склада и цеха металлообработки компетентны во всех вопросах, связанных с металлом. Логисты и операторы имеют металлургическое образование, у нас не работают вчерашние выпускники гуманитарных вузов, а к обработке каждого заказа подходят индивидуально. Покупка металлоизделий в нашей компании выгодно и удобно.</p>
+                            <blockquote class="about__blockquote content__blockquote">
+                                <p class="content__blockquote__text">Что такое индивидуальный подход от «МеталлИнвест»</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

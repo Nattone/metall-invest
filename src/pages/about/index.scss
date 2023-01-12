@@ -1,0 +1,60 @@
+@use '~/styles/colors';
+
+.about {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    & + .about__item {
+      margin-top: 47px;
+    }
+
+    &._active {
+      .about__year {
+        color: #4878d3;
+        font-size: 45px;
+        line-height: 1.3;
+        padding-right: 26px;
+        position: relative;
+
+        &::before {
+          background-color: #4878d3;
+          content: '';
+          height: 10px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+        }
+      }
+    }
+  }
+
+  &__year {
+    color: #acacac;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+
+    &:hover {
+      color: #4878d3;
+    }
+  }
+
+  &__main {
+    &__cols {
+      display: flex;
+    }
+
+    &__left {
+      width: 40%;
+    }
+
+    &__right {
+      width: 60%;
+    }
+  }
+}

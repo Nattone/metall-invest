@@ -63,7 +63,7 @@ h1.title {
 .title {
   &_highlighted {
     color: colors.$secondary;
-    padding-left: 16px;
+    padding-left: 12px;
   }
 }
 
@@ -174,11 +174,21 @@ p {
     position: relative;
     width: 100%;
   }
+
+  &_wide {
+    .cols__main {
+      max-width: 66.6%;
+    }
+
+    .cols__sidebar {
+      max-width: 33.3%;
+      padding-left: 86px;
+    }
+  }
 }
 
 .content {
   &__item {
-    margin-bottom: 14px;
     padding-left: 24px;
     position: relative;
 
@@ -188,7 +198,26 @@ p {
       height: 10px;
       left: 0;
       position: absolute;
+      top: 8px;
       width: 10px;
+    }
+  }
+
+  &__subtitle {
+    color: colors.$text-main;
+    margin-bottom: 28px;
+  }
+
+  &__text,
+  &__item {
+    color: colors.$text-secondary;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 18px;
+
+    & + .content__subtitle {
+      margin-top: 36px;
     }
   }
 }

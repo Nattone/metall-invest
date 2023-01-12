@@ -1,0 +1,56 @@
+@use '~/styles/colors';
+
+.career {
+  &__title {
+    margin-bottom: 60px;
+
+    &_highlighted {
+      padding-left: 0;
+      padding-right: 12px;
+    }
+  }
+
+  &__sidebar {
+    background: colors.$primary;
+    background-image: url('../img/art-career.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    padding: 30px 50px 26px;
+    text-align: center;
+
+    &__text {
+      color: colors.$white;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      color: colors.$white;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 28px;
+      padding-left: 38px;
+      position: relative;
+
+      &:hover {
+        color: colors.$secondary;
+      }
+
+      &::before {
+        background-image: url('../img/icon-mail_white.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        height: 28px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 28px;
+      }
+    }
+  }
+}

@@ -9,8 +9,6 @@
   width: 100%;
 
   &:hover {
-    background-color: colors.$white;
-
     .card__image {
       width: 60%;
     }
@@ -22,6 +20,12 @@
     .card__btn-more {
       display: block;
     }
+
+    .card__container {
+      background-color: colors.$white;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   &__container {
@@ -29,18 +33,18 @@
     border: 1px solid rgb(127 127 150 / 0.2);
     border-radius: 10px;
     padding: 10px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   &__wrapper {
     background: colors.$white;
     border-radius: 10px;
-    margin-bottom: 24px;
     padding: 26px 10px;
     position: relative;
   }
 
   &__image {
+    transition: width 0.3s ease;
     width: 100%;
   }
 
@@ -93,7 +97,8 @@
   }
 
   &__description {
-    padding: 0 6px;
+    border-radius: 0 0 10px 10px;
+    padding: 24px 6px 0;
   }
 
   &__name,

@@ -1,0 +1,19 @@
+@use '~/styles/colors';
+
+.partners {
+  &__quote {
+    background-color: #edecf2;
+    border-radius: 10px;
+    margin-top: 36px;
+    padding: 42px 80px;
+
+    &__text {
+      color: #4878d3;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 1.5;
+      margin-top: 26px;
+    }
+  }
+}

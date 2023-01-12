@@ -241,6 +241,17 @@ p {
     }
   }
 
+  &__link {
+    color: #4878d3;
+    font-weight: 800;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__blockquote {
     align-items: center;
     background-color: #30487e;

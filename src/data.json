@@ -488,6 +488,31 @@
           "title": "История компании"
         }
       ]
+    },
+    "partners": {
+      "pageTitle": "Партнёры компании",
+      "title-highlighted": "Наши",
+      "title": "партнёры",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "История компании"
+        }
+      ]
+    },
+    "contacts": {
+      "pageTitle": "Контакты",
+      "title": "Контакты",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Контакты"
+        }
+      ]
     }
   }
 }

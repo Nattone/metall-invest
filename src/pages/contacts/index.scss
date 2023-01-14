@@ -1,0 +1,64 @@
+.contacts {
+  &__main {
+    position: relative;
+
+    &::before {
+      background-image: url('../img/art-contacts.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 100%;
+      max-height: 300px;
+      position: absolute;
+      top: 15%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .content__text {
+    color: #141425;
+  }
+
+  &__list {
+    .content__item {
+      &::before {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &_address {
+      .content__item {
+        &::before {
+          background-image: url('../img/icon-address.svg');
+          height: 14px;
+          width: 11px;
+        }
+      }
+    }
+
+    &_phone {
+      .content__item {
+        &::before {
+          background-image: url('../img/icon-phone_filled.svg');
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+
+    &_mail {
+      .content__item {
+        &::before {
+          background-image: url('../img/icon-mail.svg');
+          height: 13px;
+          width: 16px;
+        }
+      }
+    }
+  }
+}

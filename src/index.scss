@@ -239,13 +239,26 @@ p {
     & + .content__subtitle {
       margin-top: 36px;
     }
+
+    &_bold {
+      color: #4a4a5f;
+      font-weight: 800;
+    }
+
+    a.content__item_bold,
+    a.content__text_bold {
+      &:hover {
+        color: #4878d3;
+      }
+    }
   }
 
   &__link {
-    color: #4878d3;
-    font-weight: 800;
+    color: #30487e;
     text-decoration: underline;
-    text-transform: uppercase;
+
+    // font-weight: 800;
+    // text-transform: uppercase;
 
     &:hover {
       text-decoration: none;

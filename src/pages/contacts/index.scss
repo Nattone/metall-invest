@@ -1,5 +1,8 @@
+@use '~/styles/colors';
+
 .contacts {
   &__main {
+    padding-right: 300px;
     position: relative;
 
     &::before {
@@ -59,6 +62,42 @@
           width: 16px;
         }
       }
+    }
+  }
+
+  &__requisites,
+  &__certificates {
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  &__requisites {
+    background: #edecf2;
+    color: #141425;
+    padding: 26px 30px;
+
+    &_bold {
+      display: block;
+      font-weight: 800;
+    }
+  }
+
+  &__certificates {
+    background-color: #30487e;
+    color: colors.$white;
+    padding: 34px 44px 54px;
+
+    &__text {
+      margin-bottom: 32px;
+    }
+
+    &__gallery {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

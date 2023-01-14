@@ -513,6 +513,18 @@
           "title": "Контакты"
         }
       ]
+    },
+    "delivery": {
+      "pageTitle": "Доставка",
+      "title": "Доставка",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Доставка"
+        }
+      ]
     }
   }
 }

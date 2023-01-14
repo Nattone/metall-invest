@@ -1,0 +1,113 @@
+@use '~/styles/colors';
+
+.delivery {
+  &__banner {
+    background-image: url('../img/bg-delivery.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    color: colors.$white;
+    height: 100%;
+    margin-bottom: 70px;
+    max-height: 540px;
+    padding: 168px 150px;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      background-image: url('../img/art-delivery.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: '';
+      height: 100%;
+      left: 150px;
+      max-height: 80px;
+      position: absolute;
+      right: 30%;
+    }
+
+    .content__blockquote &__subtitle,
+    &__text {
+      margin-bottom: 28px;
+      max-width: 70%;
+    }
+  }
+
+  &__sticker {
+    background: #4878d3;
+    border-radius: 10px 0;
+    bottom: 0;
+    padding: 12px 26px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 28%;
+
+    &__text {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      color: colors.$white;
+      font-size: 42px;
+      font-weight: 800;
+    }
+  }
+
+  &__cols {
+    & + .delivery__cols {
+      margin-top: 68px;
+    }
+  }
+
+  .content__subtitle {
+    max-width: 370px;
+  }
+
+  .content__item {
+    &_bold {
+      text-decoration: underline;
+    }
+  }
+
+  .content__blockquote {
+    margin-bottom: 0;
+    margin-top: 32px;
+    max-width: 70%;
+    padding: 40px 46px;
+
+    &__text {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      padding-left: 88px;
+
+      &::before {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        content: '';
+      }
+    }
+  }
+
+  .delivery__blockquote_truck {
+    .content__blockquote__text {
+      &::before {
+        background-image: url('../img/icon-truck.svg');
+      }
+    }
+  }
+
+  .delivery__blockquote_train {
+    .content__blockquote__text {
+      &::before {
+        background-image: url('../img/icon-train.svg');
+      }
+    }
+  }
+}

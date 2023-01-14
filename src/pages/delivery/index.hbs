@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.delivery.pageTitle
+    class="delivery"
+}}
+
+{{> layout/header title='pages.delivery.title'}}
+
+<main class="main">
+    <div class="container">
+        {{> common/breadcrumbs items=pages.delivery.breadcrumbs}}
+        <h2 class="title delivery__title"><span class="title_highlighted delivery__title_highlighted">{{pages.delivery.title-highlighted}}</span>{{pages.delivery.title}}</h2>
+
+        <div class="delivery__banner">
+            <h4 class="delivery__banner__subtitle">Доставка нашей продукции в кратчайшие сроки!</h4>
+            <p class="delivery__banner__text">Нужно купить металлопрокат, но нет собственного автопарка, чтобы доставить продукцию? «МеталлИнвест» принимает заказы на металлопрокат с доставкой, у нас достаточно грузовых бортов, чтобы обеспечить своих клиентов доставкой по выгодным тарифам.</p>
+            <div class="delivery__sticker">
+                <p class="delivery__sticker__text">Подробнее о доставке нашей продукции, можете уточнить по номеру:</p>
+                <a href="tel:88004578578" class="delivery__sticker__link">8-800-457-8578</a>
+            </div>
+        </div>
+        <div class="delivery__cols cols cols_wide">
+            <aside class="delivery__sidebar cols__sidebar">
+                <h4 class="content__subtitle">Доставка металлопроката по городу</h4>
+            </aside>
+            <div class="delivery__main cols__main">
+                <p class="content__text">Стоит отметить, что основные складские площади, крупнейшие производственные и металлообрабатывающие цеха, большой автопарк  больших и малых грузовых автомобилей, а также головной офис нашей компании территориально расположены в г. Красноярске.</p>
+                <ul class="content__list delivery__list delivery__list_address">
+                    <li class="content__item"><span class="content__item_bold">Борт 6 м. по цене 800 р/ч</span> – оптимальный вариант для доставки по городу. Автомобиль имеет достаточную грузоподъемность и при этом может без ограничений передвигаться по дорогам общего пользования. Если вам нужно доставить трубы, металлические листы, другой мелкий металлопрокат, который нужно разгружать вручную, - мы направим вам именно этот автомобиль.</li>
+                    <li class="content__item"><span class="content__item_bold">Борт 12 м. по цене 1400 р/ч</span>, грузоподъемностью 20 т. Позволяет за одну поездку доставить большие объемы негабаритного груза. Если вам необходимо заказать металлоизделия  с доставкой, но в автопарке нет длинномера – мы сами организуем доставку.</li>
+                    <li class="content__item"><span class="content__item_bold">Борты с манипуляторами (6 и 12 м.).</span> Наличие манипулятора позволяет разгрузить металл, не привлекая рабочих. Выбор манипулятора зависит от объема заказа. Стоимость часа работы 1500 и 2500 рублей соответственно.</li>
+                </ul>
+                <blockquote class="content__blockquote delivery__blockquote delivery__blockquote_truck">
+                    <p class="content__blockquote__text">По предварительной договоренности мы можем помочь с разгрузкой, предоставив бригаду грузчиков-стропальщиков.</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="delivery__cols cols cols_wide">
+            <aside class="delivery__sidebar cols__sidebar">
+                <h4 class="content__subtitle">Доставка металлопроката в другой город</h4>
+            </aside>
+            <div class="delivery__main cols__main">
+                <p class="content__text">Стоит отметить, что основные складские площади, крупнейшие производственные и металлообрабатывающие цеха, большой автопарк  больших и малых грузовых автомобилей, а также головной офис нашей компании территориально расположены в г. Красноярске.</p>
+                <ul class="content__list delivery__list delivery__list_address">
+                    <li class="content__item"><span class="content__item_bold">доставка в радиусе 500 км</span> – в течение суток после оплаты заказа;</li>
+                    <li class="content__item"><span class="content__item_bold">от 500 до 1500 км</span>  – 1-2 дня;</li>
+                    <li class="content__item"><span class="content__item_bold">от 2000 до 3000 км</span>  – 2-3 дня;</li>
+                </ul>
+                <blockquote class="content__blockquote delivery__blockquote delivery__blockquote_train">
+                    <p class="content__blockquote__text">По предварительной договоренности мы можем помочь с разгрузкой, предоставив бригаду грузчиков-стропальщиков.</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

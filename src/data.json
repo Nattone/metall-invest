@@ -525,6 +525,19 @@
           "title": "Доставка"
         }
       ]
+    },
+    "team": {
+      "pageTitle": "Сотрудники",
+      "title": "Наши",
+      "title-highlighted": "сотрудники",
+      "breadcrumbs": [
+        {
+          "title": "Главная",
+          "link": "index.html"
+        },{
+          "title": "Сотрудники"
+        }
+      ]
     }
   }
 }

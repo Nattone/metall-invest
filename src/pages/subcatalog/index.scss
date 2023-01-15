@@ -34,12 +34,12 @@
       transition: all 0.3s ease;
 
       &:hover,
-      & + ._active {
+      &._active {
         border-color: #4775d0;
         color: colors.$primary;
       }
 
-      & + ._active {
+      &._active {
         padding-left: 72px;
 
         &::before {

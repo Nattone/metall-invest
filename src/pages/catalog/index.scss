@@ -34,7 +34,7 @@
       flex-wrap: nowrap;
       width: 100%;
 
-      & + ._active {
+      &._active {
         .catalog__list__left,
         .catalog__list__right {
           display: block;

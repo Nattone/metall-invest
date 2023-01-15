@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+{{#> common/body
+    title=pages.team.pageTitle
+    class="team"
+}}
+
+{{> layout/header title='pages.team.title'}}
+
+<main class="main">
+    <div class="container team__head">
+        {{> common/breadcrumbs items=pages.team.breadcrumbs}}
+        <h2 class="title team__title">{{pages.team.title}}<span class="title_highlighted team__title_highlighted">{{pages.team.title-highlighted}}</span></h2>
+
+        <div class="team__department">
+            <ul class="team__department__list">
+                <li class="team__department__item">
+                    <a href="" class="team__department__link">Руководство</a>
+                </li>
+                <li class="team__department__item _active">
+                    <a href="" class="team__department__link">Отдел продаж (черный металлопрокат)</a>
+                </li>
+                <li class="team__department__item">
+                    <a href="" class="team__department__link">Отдел маркетинга</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="team__workers">
+        <div class="container">
+
+            <div class="team__workers__list">
+                {{#each pages.main-page.team.item}}
+                    {{> team/item item=this }}
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

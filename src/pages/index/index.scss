@@ -282,6 +282,12 @@
     &__item {
       // width: 22.22%;
       width: 20%;
+
+      &__description {
+        .team__item__title {
+          display: none;
+        }
+      }
     }
   }
 

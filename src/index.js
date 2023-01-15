@@ -1,7 +1,5 @@
 import Glide from '@glidejs/glide'
 
-console.log('hello! js worsk fine!')
-
 export const initGlide = (selector, options) => {
   document.querySelectorAll(selector)?.forEach((element) => {
     const glide = new Glide(element, {
@@ -17,9 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initGlide('.primary__slider', {
     autoplay: 5000,
   })
-})
 
-document.addEventListener('DOMContentLoaded', () => {
   initGlide('.partners__carousel', {
     perView: 4,
     startAt: 1,
@@ -30,9 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     after: 0
     // }
   })
-})
 
-document.addEventListener('DOMContentLoaded', () => {
   initGlide('.similar__carousel', {
     perView: 4,
     startAt: 1,
@@ -43,4 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //     after: 0
     // }
   })
+
+  // initScrollbar('[data-simplebar]')
 })

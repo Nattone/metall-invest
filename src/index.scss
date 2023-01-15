@@ -548,6 +548,37 @@ p {
   }
 }
 
+.simplebar-track {
+  background-color: rgba(colors.$grey-bg, 0.5);
+  border-radius: 20px;
+  height: 10px;
+  mix-blend-mode: multiply;
+
+  &.simplebar-horizontal {
+    height: 10px;
+
+    .simplebar-scrollbar {
+      height: 100%;
+      top: 0;
+
+      &::before {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.simplebar-scrollbar {
+  &.simplebar-visible {
+    &::before {
+      background-color: #416bc3;
+      border-radius: 20px;
+      opacity: 1;
+    }
+  }
+}
+
 .carousel {
   padding-top: 104px;
   position: relative;

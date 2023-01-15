@@ -28,6 +28,8 @@ module.exports = (env = {}, argv = {}) => {
     entry: {
       main: [
         'normalize.css',
+        'simplebar/dist/simplebar.css',
+        'simplebar/dist/simplebar.js',
         '~/index.js',
         '~/index.scss',
         ...componentsEntries,

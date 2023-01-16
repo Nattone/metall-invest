@@ -502,6 +502,16 @@ p {
       width: 12px;
     }
   }
+
+  .icon {
+    height: 24px;
+    transform: rotate(180deg);
+    width: 14px;
+
+    use {
+      fill: colors.$white;
+    }
+  }
 }
 
 .section {

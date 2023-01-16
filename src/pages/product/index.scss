@@ -220,6 +220,11 @@
 
     &__slides {
       display: flex;
+
+      .card {
+        flex-shrink: 0;
+        width: 24%;
+      }
     }
   }
 }

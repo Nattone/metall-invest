@@ -56,22 +56,20 @@
 
     <div class="similar">
         <div class="container">
-            <div class="glide carousel">
-                <div class="similar__carousel glide__carousel scrollbar">
-                    <div class="similar__track glide__track" data-glide-el="track">
-                        <div class="similar__slides glide__slides">
-                            {{#each components.cards}}
-                                {{> card/item data=this}}
-                            {{/each}}
-                            
-                        </div>
+            <div class="carousel">
+                <div class="similar__carousel" data-simplebar data-simplebar-auto-hide="false">
+                    <div class="similar__slides">
+                        {{#each components.cards}}
+                            {{> card/item data=this}}
+                        {{/each}}
+                        
                     </div>
-                    <div class="glide__navigation carousel__navigation similar__head">
-                        <p class="similar__title">Похожие товары</p>
-                        <div class="glide__arrows carousel__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow_left btn btn_round carousel__arrow carousel__arrow_left" data-glide-dir="<"></button>
-                            <button class="glide__arrow glide__arrow_right btn btn_round carousel__arrow carousel__arrow_right" data-glide-dir=">"></button>
-                        </div>
+                </div>
+                <div class="carousel__navigation similar__head">
+                    <p class="similar__title">Похожие товары</p>
+                    <div class="carousel__arrows">
+                        <button class="btn btn_round carousel__arrow carousel__arrow_left" data-glide-dir="<"></button>
+                        <button class="btn btn_round carousel__arrow carousel__arrow_right" data-glide-dir=">"></button>
                     </div>
                 </div>
             </div>

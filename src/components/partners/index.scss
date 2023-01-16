@@ -1,0 +1,27 @@
+.partners-widget {
+  position: relative;
+
+  &__list {
+    border: 0.5px solid #d7d5e0;
+    display: flex;
+    flex-flow: column wrap;
+    height: 400px;
+    margin-bottom: 44px;
+    width: 100%;
+  }
+
+  &__item {
+    align-items: center;
+    border: 0.5px solid #d7d5e0;
+    display: flex;
+    flex-shrink: 0;
+    height: 50%;
+    justify-content: center;
+    padding: 18px;
+    width: 25%;
+
+    &__image {
+      max-height: 200px;
+    }
+  }
+}

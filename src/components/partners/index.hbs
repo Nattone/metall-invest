@@ -1,0 +1,15 @@
+<div class="partners-widget carousel">
+    <div class="partners-widget__wrapper" data-simplebar data-simplebar-auto-hide="false">
+        <div class="partners-widget__list">
+            {{#each items}}
+                <a href="{{this.link}}" class="partners-widget__item">
+                    <img src="{{this.img}}" alt="" class="partners-widget__item__image">
+                </a>
+            {{/each}}
+        </div>
+    </div>
+    <div class="partners-widget__navigation carousel__navigation">
+        <button class="btn btn_round carousel__arrow carousel__arrow_left"></button>
+        <button class="btn btn_round carousel__arrow carousel__arrow_right"></button>
+    </div>
+</div>

@@ -269,43 +269,46 @@
         "title_accent": "партнёры",
         "btn": "Подробнее о партнёрах",
         "blockquote": "«Нашим партнерам можно доверять! Мы сотрудничаем с надежными транспортными компаниями и крупнейшими заводами металлопроката",
-        "slides": [
+        "items": [
           {
-            "item": [
-              {
-                "img": "img/content/partners1.png"
-              },
-              {
-                "img": "img/content/partners2.png"
-              }
-            ]
-          },{
-            "item": [
-              {
-                "img": "img/content/partners3.png"
-              },
-              {
-                "img": "img/content/partners4.png"
-              }
-            ]
-          },{
-            "item": [
-              {
-                "img": "img/content/partners5.png"
-              },
-              {
-                "img": "img/content/partners6.png"
-              }
-            ]
-          },{
-            "item": [
-              {
-                "img": "img/content/partners7.png"
-              },
-              {
-                "img": "img/content/partners8.png"
-              }
-            ]
+            "img": "img/content/partners1.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners2.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners3.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners4.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners5.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners6.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners7.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners8.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners5.png",
+            "link": "#"
+          },
+          {
+            "img": "img/content/partners2.png",
+            "link": "#"
           }
         ]
       },

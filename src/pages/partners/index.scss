@@ -1,6 +1,17 @@
 @use '~/styles/colors';
 
 .partners {
+  &__title {
+    &_highlighted {
+      padding-left: 0;
+      padding-right: 12px;
+    }
+  }
+
+  &__cols {
+    margin-bottom: 35px;
+  }
+
   &__quote {
     background-color: #edecf2;
     border-radius: 10px;

@@ -61,11 +61,11 @@
       z-index: 1;
     }
 
-    .glide {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
+    // .glide {
+    //   display: flex;
+    //   flex-direction: column;
+    //   height: 100%;
+    // }
 
     &__slider {
       height: 100%;
@@ -310,16 +310,6 @@
 
     .section__head {
       margin-bottom: 36px;
-    }
-
-    &__carousel {
-      padding-bottom: 44px;
-    }
-
-    &__slides {
-      border: 0.5px solid #d7d5e0;
-      display: flex;
-      width: 100%;
     }
   }
 

@@ -108,24 +108,8 @@
                 <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.partners.btn}}</button>
             </div>
-            <div class="glide carousel">
-                <div class="partners__carousel glide__carousel scrollbar">
-                    <div class="partners__track glide__track" data-glide-el="track">
-                        <div class="partners__slides glide__slides">
-                            {{#each pages.main-page.partners.slides}}
-                                {{> partners/item slides=this }}
-                            {{/each}}
-                        </div>
-                    </div>
-                    <div class="glide__navigation carousel__navigation">
-                        <div class="glide__arrows carousel__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow_left btn btn_round carousel__arrow carousel__arrow_left" data-glide-dir="<"></button>
-                            <button class="glide__arrow glide__arrow_right btn btn_round carousel__arrow carousel__arrow_right" data-glide-dir=">"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+            {{> partners/index items=pages.main-page.partners.items }}
         </div>
     </section>
     <section class="map section">

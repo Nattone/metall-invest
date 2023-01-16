@@ -50,11 +50,58 @@
     }
 
     &__left {
-      width: 40%;
+      width: 45%;
     }
 
     &__right {
-      width: 60%;
+      padding-left: 35px;
+      width: 55%;
+    }
+  }
+
+  &__carousel {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      margin-bottom: 18px;
+      margin-right: 10px;
+      position: relative;
+      width: 100%;
+    }
+
+    &__image {
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+
+      // max-height: 400px;
+    }
+
+    &__sticker {
+      background-color: #4878d3;
+      border-radius: 10px 0;
+      bottom: 0;
+      color: colors.$white;
+      padding: 12px 20px;
+      position: absolute;
+      right: 0;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 2px;
+
+      &_big {
+        display: block;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1.3;
+      }
     }
   }
 }

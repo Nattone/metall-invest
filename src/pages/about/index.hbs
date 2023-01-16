@@ -12,7 +12,7 @@
         {{> common/breadcrumbs items=pages.about.breadcrumbs}}
         <h2 class="title about__title">{{pages.about.title}}<span class="title_highlighted about__title_highlighted">{{pages.about.title-highlighted}}</span></h2>
 
-        <div class="cols cols_wide">
+        <div class="cols cols">
             <aside class="cols__sidebar">
                 <div class="about__sidebar">
                     <ul class="about__list">
@@ -32,8 +32,21 @@
             <div class="cols__main">
                 <div class="about__main__cols">
                     <div class="about__main__left">
-                        <div class="about__carousel">
-                            <img src="img/content/.png" alt="" class="footer__widget">
+                        <div class="about__carousel" data-simplebar data-simplebar-auto-hide="false">
+                            <div class="about__carousel__list">
+                                <div class="about__carousel__item">
+                                    <img src="img/content/team6-1.png" alt="" class="about__carousel__image">
+                                    <div class="about__carousel__sticker">
+                                        <p class="about__carousel__text">более<span class="about__carousel__text_big">50 000 тонн</span>металлопроката в год</p>
+                                    </div>
+                                </div>
+                                <div class="about__carousel__item">
+                                    <img src="img/content/card3.png" alt="" class="about__carousel__image">
+                                    <div class="about__carousel__sticker">
+                                        <p class="about__carousel__text">более<span class="about__carousel__text_big">12 000 кг</span>металлопроката в год</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="about__main__right">

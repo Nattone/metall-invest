@@ -10,20 +10,18 @@
 <main class="main">
     <section class="primary section">
         <div class="container">
-        
-            {{!-- {{> slider/slider }} --}}
 
-            <div class="glide">
-                <div class="primary__slider">
+            <div class="glide primary__slider">
+
                     <div class="glide__track primary__track" data-glide-el="track">
                         <div class="glide__slides primary__slides">
                             <a class="glide__slide primary__slide" href="">
                                 <div class="primary__slide__content">
                                     <h1 class="primary__slide__title">{{pages.main-page.primary.title}}</h1>
-                                    <ul class="primary__slide__list content__list">
+                                    <ul class="primary__slide__list">
 
                                         {{#each pages.main-page.primary.list}}
-                                            <li class="primary__slide__item content__item">{{this.item}}</li>
+                                            <li class="primary__slide__item">{{this.item}}</li>
                                         {{/each}}
                                     </ul>
                                 </div>
@@ -37,7 +35,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
                 
                 <div class="primary__bottom">
                     <div class="glide__navigation primary__navigation">
@@ -93,10 +90,26 @@
                 <div class="flex-separator"></div>
                 <button class="section__btn btn btn_normal btn_light">{{pages.main-page.team.btn}}</button>
             </div>
-            <div class="team__block">
-                {{#each pages.main-page.team.item}}
-                    {{> team/item item=this }}
-                {{/each}}
+        </div>
+
+        <div class="carousel">
+            <div class="container">
+                <div class="carousel__navigation">
+                    <div class="carousel__arrows">
+                        <button class="btn btn_round carousel__arrow carousel__arrow_left" data-glide-dir="<"></button>
+                        <button class="btn btn_round carousel__arrow carousel__arrow_right" data-glide-dir=">"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team__block" data-simplebar data-simplebar-auto-hide="false">
+                <div class="container">
+                    <div class="team__block__list">
+                        {{#each pages.main-page.team.item}}
+                            {{> team/item item=this }}
+                        {{/each}}
+                    </div>
+                </div>
             </div>
         </div>
     </section>

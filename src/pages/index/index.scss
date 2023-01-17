@@ -69,11 +69,13 @@
 
     &__slider {
       height: 100%;
+      position: relative;
     }
 
     &__track,
     &__slides {
       flex-grow: 1;
+      height: 100%;
     }
 
     &__slides {
@@ -149,8 +151,12 @@
 
     &__bottom {
       align-items: end;
+      bottom: 0;
       display: flex;
       justify-content: space-between;
+      left: 0;
+      position: absolute;
+      right: 0;
     }
 
     &__scroll {
@@ -267,6 +273,13 @@
     background-color: colors.$grey-bg;
     padding-top: 176px; // header 94 + 82
 
+    .simplebar-track {
+      left: 0;
+      margin: 0 auto;
+      max-width: 1880px - (50px * 2);
+      right: 0;
+    }
+
     .section__head {
       margin-bottom: 24px;
     }
@@ -276,12 +289,15 @@
     }
 
     &__block {
-      display: flex;
+      &__list {
+        display: flex;
+        margin: 0 -15px 46px;
+      }
     }
 
     &__item {
-      // width: 22.22%;
-      width: 20%;
+      flex-shrink: 0;
+      width: 25%;
 
       &__description {
         .team__item__title {
@@ -289,6 +305,18 @@
         }
       }
     }
+
+    // .carousel {
+    //   padding-top: 24px;
+
+    //   &__navigation {
+    //     position: relative;
+    //     margin-bottom: 30px;
+    //     display: flex;
+    //     width: 100%;
+    //     justify-content: flex-end;
+    //   }
+    // }
   }
 
   .partners {

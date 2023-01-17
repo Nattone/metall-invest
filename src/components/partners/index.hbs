@@ -1,4 +1,11 @@
 <div class="partners-widget carousel">
+    <div class="partners-widget__navigation carousel__navigation">
+         <div class="carousel__arrows">
+            <button class="btn btn_round carousel__arrow carousel__arrow_left" data-glide-dir="<"></button>
+            <button class="btn btn_round carousel__arrow carousel__arrow_right" data-glide-dir=">"></button>
+        </div>
+    </div>
+
     <div class="partners-widget__wrapper" data-simplebar data-simplebar-auto-hide="false">
         <div class="partners-widget__list">
             {{#each items}}
@@ -7,9 +14,5 @@
                 </a>
             {{/each}}
         </div>
-    </div>
-    <div class="partners-widget__navigation carousel__navigation">
-        <button class="btn btn_round carousel__arrow carousel__arrow_left"></button>
-        <button class="btn btn_round carousel__arrow carousel__arrow_right"></button>
     </div>
 </div>

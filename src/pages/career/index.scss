@@ -57,6 +57,10 @@
   &__vacancies {
     margin-top: 90px;
 
+    &__head {
+      justify-content: space-between;
+    }
+
     .simplebar-track {
       left: 0;
       margin: 0 auto;

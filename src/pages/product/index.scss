@@ -208,6 +208,7 @@
     &__head {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 60px;
       width: 100%;
     }
 
@@ -220,11 +221,19 @@
 
     &__slides {
       display: flex;
+      margin: 0 -14px;
 
       .card {
         flex-shrink: 0;
-        width: 24%;
+        width: 25%;
       }
+    }
+
+    .simplebar-track {
+      left: 0;
+      margin: 0 auto;
+      max-width: 1880px - (50px * 2);
+      right: 0;
     }
   }
 }

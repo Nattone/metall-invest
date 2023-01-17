@@ -261,6 +261,36 @@
             "mail": "info@mail.ru",
             "phone": "+79136454545",
             "phone-link": "+7 (913) 645 - 4545"
+          },
+          {
+            "img": "img/content/team6-1.png",
+            "img-hover": "img/content/team1-2.png",
+            "title": "Иванов Пётр Михайлович",
+            "job": "Руководитель отдела и еще какое то длинное название",
+            "departament": "Снабжение",
+            "mail": "info@mail.ru",
+            "phone": "+79136454545",
+            "phone-link": "+7 (913) 645 - 4545"
+          },
+          {
+            "img": "img/content/team5-1.png",
+            "img-hover": "img/content/team2-2.png",
+            "title": "Иванов Пётр Михайлович",
+            "job": "Руководитель отдела и еще какое то длинное название",
+            "departament": "Снабжение",
+            "mail": "info@mail.ru",
+            "phone": "+79136454545",
+            "phone-link": "+7 (913) 645 - 4545"
+          },
+          {
+            "img": "img/content/team4-1.png",
+            "img-hover": "img/content/team3-2.png",
+            "title": "Иванов Пётр Михайлович",
+            "job": "Руководитель отдела и еще какое то длинное название",
+            "departament": "Снабжение",
+            "mail": "info@mail.ru",
+            "phone": "+79136454545",
+            "phone-link": "+7 (913) 645 - 4545"
           }
         ]
       },
